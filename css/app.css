@@ -1,0 +1,210 @@
+body {
+    padding-top: 51px;
+    font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+div.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.toggler {
+    display: none;
+    color: #CCCCCC;
+    font-size: 1.5em;
+    line-height: 2.5em;
+    text-align: right;
+}
+
+.subContent section {
+    padding-top: 54px;
+}
+
+.nav-tabs li a {
+    font-size: 22px;
+}
+
+div.jumbotron {
+    padding: 40px 0;
+    margin: 0;
+    text-align: center;
+}
+
+div.main {
+    position: relative;
+}
+
+div.logo img {
+    width: 530px;
+    padding-bottom: 30px;
+}
+
+div.date {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1em;
+
+}
+
+div.tagline {
+    line-height: 1.5em;
+}
+
+div.action a.btn {
+    vertical-align: top;
+    background-color: #8DC74E;
+}
+
+.nav > li {
+    float: left;
+}
+
+.subContent section h2 {
+    font-weight: 200;
+    font-size: 3em;
+}
+
+.subContent section h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #006600;
+    margin: 0 0 1em 0;
+
+}
+
+.subContent p {
+    font-size: 1.25em;
+    font-weight: 200;
+}
+
+#topics ul {
+    margin: 0;
+    padding: 0;
+}
+
+#topics li.short {
+    clear: both;
+    list-style: none;
+    height: auto;
+    min-height: inherit;
+}
+
+#topics li {
+    clear: both;
+    list-style: none;
+    padding-bottom: 1.25em;
+    min-height: 300px;
+    margin-bottom: 2em;
+}
+
+#topics li h4 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 1em 0;
+    font-weight: bold;
+}
+
+#topics div.speaker {
+    margin: 0 2em 0 0;
+    float:left;
+}
+
+#topics div.speaker h5 {
+    margin-bottom: 0;
+}
+#topics div.speaker h6 {
+    margin-top: 0.5em;
+}
+
+#topics div.speaker img{
+   border-radius: 1em;
+}
+
+#topics li p {
+
+}
+
+
+
+#location > div {
+    display: table-cell;
+    vertical-align: top;
+}
+
+#theAddress {
+    padding: 0 1em;
+}
+
+@media (max-width: 640px) /* @grid-float-breakpoint -1 */ {
+
+    .toggler {
+        display: table-cell;
+    }
+
+    div.jumbotron {
+
+    }
+
+    div.main {
+        text-align: center;
+    }
+
+    div.logo img {
+        width: 100%;
+        max-width: 530px;
+    }
+
+    div.date {
+        font-size: 1.75em;
+
+    }
+
+    div.tagline {
+
+    }
+
+    .nav {
+        display: none;
+        padding: 0;
+        vertical-align: top;
+        width: 100%;
+    }
+
+    .tc {
+        display: table-cell;
+    }
+
+    .nav > li {
+        float: none;
+        display: block;
+        text-align: center;
+        font-size: 1.25em;
+    }
+
+    .navbar-collapse {
+        max-height: none;
+    }
+
+    body {
+        padding-top: 50px;
+    }
+
+    div.action a.btn {
+        width: 100%;
+        font-size: 1.5em;
+        margin: .25em 0;
+    }
+
+    #topics div.speaker {
+        float:none;
+    }
+
+    #location > div {
+        display: block;
+    }
+
+    #theAddress {
+        padding: 1em 0;
+    }
+}
