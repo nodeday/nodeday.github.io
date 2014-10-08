@@ -1,4 +1,6 @@
-nodeday.github.io
-=================
+NodeDay
+=======
 
-The public facing site for [NodeDay](http://nodeday.com/).
+This repository will be used to host the static web content for our upcoming NodeJS conference at PayPal North Campus.
+
+#☃ [NodeDay.com](http://nodeday.com) ☃
