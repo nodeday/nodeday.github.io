@@ -251,6 +251,11 @@ body > section h3 {
   background-image: url(../img/ryan_stevens.png);
 }
 
+.topic .speaker #trevor_norris .hexagon-3 {
+  background-image: url(../img/trevor_norris.png);
+}
+
+
 .topic .speaker-info {
   margin-top: 42px;
   text-align: left;
