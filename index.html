@@ -1,148 +1,229 @@
 <!doctype html>
 <html class="no-js" lang="en-us">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>NodeDay by Intuit</title>
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/app.css" type="text/css"/>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+
 <body data-spy="scroll" data-target=".topMenu" id="home">
 
-<header role="navigation" class="navbar navbar-fixed-top">
-  <div class="wrapper">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="NodeDay"></a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#topics">Presentations</a></li>
-        <li><a href="#location">Location</a></li>
-        <li><a href="#registration">Registration</a></li>
-      </ul>
-    </div>
-  </div>
-</header>
-
-<section id="hero">
-
-  <div class="wrapper">
-
-    <div class="row">
-
-      <div class="col-xs-12">
-
-        <h1 class="splash"><img src="img/hero.svg" alt="NodeDay"></h1>
-
-        <div class="tagline">A NodeJS conference<br /> for the enterprise, by the enterprise.</div>
-
-        <div class="date">December 5<sup>th</sup>, 2014</div>
-        
-        <div class="action">
-
-            <a href="#registration" class="btn btn-success">Register Now!</a>
-
-            <a href="https://twitter.com/NodeDay" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @NodeDay</a>
-
-            <script>!function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                if (!d.getElementById(id)) {
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = p + '://platform.twitter.com/widgets.js';
-                    fjs.parentNode.insertBefore(js, fjs);
-                }
-            }(document, 'script', 'twitter-wjs');</script>
-
+    <header role="navigation" class="navbar navbar-fixed-top">
+        <div class="wrapper">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.svg" alt="NodeDay">
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">Home</a>
+                    </li>
+                    <li><a href="#about">About</a>
+                    </li>
+                    <li><a href="#topics">Presentations</a>
+                    </li>
+                    <li><a href="#location">Location</a>
+                    </li>
+                    <li><a href="#registration">Registration</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </header>
 
-      </div>
-
-    </div>
- 
-  </div>
-
-</section>
-
-<section id="about" aria-labelledby="aboutLabel">
-
-  <div class="wrapper">
-
-    <div class="row">
-
-      <div class="col-xs-12">
-
-        <h2>About NodeDay 2014</h2>
-
-        <h3>We are about Node in Enterprise</h3>
-
-        <p>
-            It's one thing to use NodeJS to build an application, but an entirely different best to build an enterprise ecosystem around NodeJS that can meet all the needs of some the worlds most used applications. NodeDay is about coming together to discuss and share our experiences and solutions with NodeJS and drive forward both the technology and community, so come join us, December 5th 2014 at the Mountain View Intuit campus as we share our experiences and learnings around using NodeJS in the enterprise setting. 
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section id="topics" aria-labelledby="topicsLabel">
-    
-    <div class="wrapper">
-
-        <h2 id="topicsLabel">Speakers &amp; Presentations</h2>
-
-    </div>
-
-    <div class="topic topic-talk">
+    <section id="hero">
 
         <div class="wrapper">
 
             <div class="row">
 
-                <div class="col-sm-10">
-              
-                    <h3 class="title">Integrating Node.js into your Ecosystem</h3>
+                <div class="col-xs-12">
 
-                    <p class="abstract">
-                        <b>Abstract</b> Adopting Node.js at your company, but don’t want to rebuild everything? Learn some pragmatic techniques for making Node.js play well in your existing infrastructure.
-                    </p>
+                    <h1 class="splash">
+                        <img src="img/hero.svg" alt="NodeDay">
+                    </h1>
 
-                    <p class="bio">
-                        <b>About Alex</b> Alex is a front end engineer that is passionate about building great user experiences on the open web stack. While he has spent his entire career building JavaScript applications on the desktop, browser, and server, he is still continually surprised by all the new and creative ways in which the community leverages JavaScript. Alex is presently a Senior UI Engineer at Netflix, and is part of the core team leading the migration of <a href="http://www.netflix.com" target="_blank">Netflix.com</a> to Node.js.
+                    <div class="tagline">A NodeJS conference
+                        <br />for the enterprise, by the enterprise.</div>
+
+                    <div class="date">December 5<sup>th</sup>, 2014</div>
+
+                    <div class="action">
+
+                        <a href="#registration" class="btn btn-success">Register Now!</a>
+
+                        <a href="https://twitter.com/NodeDay" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @NodeDay</a>
+
+                        <script>
+                        ! function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0],
+                                p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + '://platform.twitter.com/widgets.js';
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, 'script', 'twitter-wjs');
+                        </script>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="about" aria-labelledby="aboutLabel">
+
+        <div class="wrapper">
+
+            <div class="row">
+
+                <div class="col-xs-12">
+
+                    <h2>About NodeDay 2014</h2>
+
+                    <h3>We are about Node in Enterprise</h3>
+
+                    <p>
+                        It's one thing to use NodeJS to build an application, but an entirely different best to build an enterprise ecosystem around NodeJS that can meet all the needs of some the worlds most used applications. NodeDay is about coming together to discuss and share our experiences and solutions with NodeJS and drive forward both the technology and community, so come join us, December 5th 2014 at the Mountain View Intuit campus as we share our experiences and learnings around using NodeJS in the enterprise setting.
                     </p>
 
                 </div>
 
-                <div class="col-sm-2">
+            </div>
 
-                    <div class="row speaker">
+        </div>
 
-                        <div class="col-sm-12 col-xs-6 speaker-image">
-              
-                            <div class="hexagon-1" id="alex_liu"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
+    </section>
 
-                        </div>
+    <section id="topics" aria-labelledby="topicsLabel">
 
-                        <div class="col-sm-12 col-xs-6 speaker-info">
+        <div class="wrapper">
 
-                            <p class="speaker-name">Alex Liu</p>
+            <h2 id="topicsLabel">Topics &amp; Agenda</h2>
 
-                            <p class="speaker-tag"><a href="https://twitter.com/stinkydofu" target="_blank">@stinkydofu</a></p>
+        </div>
 
-                            <p class="speaker-occupation">Netflix</p>
+        <div class="topic topic-init">
+
+            <div class="wrapper">
+
+                <div class="row">
+
+                    <div class="col-sm-2 time">8:00-9:00AM</div>
+
+                    <div class="col-sm-10">
+
+                        <h3 class="title">Check-In and Registration</h3>
+
+                        <p class="description">Coffee and snacks will be provided outside the main room.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="topic topic-talk">
+
+            <div class="wrapper">
+
+                <div class="row">
+
+                    <div class="col-sm-2 time">9:00-9:30AM</div>
+
+                    <div class="col-sm-10">
+
+                        <h3 class="title">Welcome</h3>
+
+                        <p class="description">Welcome introduction by Intuit's own senior VP Nat Natarajan and chief architect Alex Balazs.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="topic topic-talk">
+
+            <div class="wrapper">
+
+                <div class="row">
+
+                    <div class="col-sm-2 time">
+
+                        9:30-10:05AM
+
+                        <div class="icon core"></div>
+
+                    </div>
+
+                    <div class="col-sm-8">
+
+                        <h3 class="title">Node Down the Road</h3>
+
+                        <p class="abstract">
+                            <b>Abstract</b> Last year we shared how we overcame challenges to enable the successful entry of node.js at Paypal. We have gone further along in our journey, transforming what we kick started, into a self sustaining stable ecosystem. It is also important to mention, how Paypal becoming a player in the Open source node.js community, has helped renovate the internal engineering culture. I will talk about the technological improvements/experiments with node.js and community building efforts happening @ Paypal.
+                        </p>
+
+                        <p class="bio">
+                            <b>About Poornima</b> Poornima is a web developer who is passionate about all things node.js and open source. She is currently part of the team that open sourced krakenjs (<a href="http://www.krakenjs.com" target="_blank">www.krakenjs.com</a>) and is an active contributor/ maintainer.
+                        </p>
+
+                        <!-- <p class="link">
+                            <span>Presentation:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
+                        </p>
+
+                        <p class="link">
+                            <span>Video:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
+                        </p> -->
+
+                    </div>
+
+                    <div class="col-sm-2">
+
+                        <div class="row speaker">
+
+                            <div class="col-sm-12 col-xs-6 speaker-image">
+                  
+                                <div class="hexagon-1" id="poornima"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
+
+                            </div>
+
+                            <div class="col-sm-12 col-xs-6 speaker-info">
+
+                                <p class="speaker-name">Poornima Venkatakrishnan</p>
+
+                                <p class="speaker-occupation">PayPal</p>
+
+                            </div>
 
                         </div>
 
@@ -154,43 +235,55 @@
 
         </div>
 
-    </div>
+        <div class="topic topic-talk">
 
-    <div class="topic topic-talk">
+            <div class="wrapper">
 
-        <div class="wrapper">
+                <div class="row">
 
-            <div class="row">
+                    <div class="col-sm-2 time">
 
-                <div class="col-sm-10">
-              
-                    <h3 class="title">Node Down the Road</h3>
+                        10:05-10:40AM
 
-                    <p class="abstract">
-                        <b>Abstract</b> Last year we shared how we overcame challenges to enable the successful entry of node.js at Paypal. We have gone further along in our journey, transforming what we kick started, into a self sustaining stable ecosystem. It is also important to mention, how Paypal becoming a player in the Open source node.js community, has helped renovate the internal engineering culture. I will talk about the technological improvements/experiments with node.js and community building efforts happening @ Paypal.
-                    </p>
+                        <div class="icon enterprise"></div>
 
-                    <p class="bio">
-                        <b>About Poornima</b> Poornima is a web developer who is passionate about all things node.js and open source. She is currently part of the team that open sourced krakenjs (<a href="http://www.krakenjs.com" target="_blank">www.krakenjs.com</a>) and is an active contributor/ maintainer.
-                    </p>
+                    </div>
 
-                </div>
+                    <div class="col-sm-8">
 
-                <div class="col-sm-2">
+                        <h3 class="title">Node.js for Java Engineers</h3>
 
-                    <div class="row speaker">
+                        <p class="abstract">
+                            <b>Abstract</b> Moving from Java to Node.js presents some unique challenges. There are some meaningful differences in the ecosystems as well as a lot of positive things enterprise Java skills can offer the Node.js community.
+                        </p>
 
-                        <div class="col-sm-12 col-xs-6 speaker-image">
-              
-                            <div class="hexagon-1" id="poornima"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
+                        <p class="bio">
+                            <b>About Ryan</b> Ryan began his career over 11 years ago building enterprise core systems to run banks and credit unions. It was there Ryan helped implement a rules engine using the Rhino JavaScript runtime and saw the power of running JavaScript on the server. When Ryan started building complex Node.js applications in 2011, he knew JavaScript had found a home outside of the browser. As a seasoned Engineering Manager, Ryan is passionate about optimizing a team's workflow around the strengths of Node.js. He wants to inspire others to build great Node.js applications by promoting modular design, continuous release best practices, and the benefits of utilizing a private npm instance.
+                        </p>
 
-                        </div>
+                    </div>
 
-                        <div class="col-sm-12 col-xs-6 speaker-info">
+                    <div class="col-sm-2">
 
-                            <p class="speaker-name">Poornima Venkatakrishnan</p>
+                        <div class="row speaker">
 
-                            <p class="speaker-occupation">PayPal</p>
+                            <div class="col-sm-12 col-xs-6 speaker-image">
+
+                                <div class="hexagon-1" id="ryan_stevens">
+                                    <div class="hexagon-2">
+                                        <div class="hexagon-3"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-sm-12 col-xs-6 speaker-info">
+
+                                <p class="speaker-name">Ryan Stevens</p>
+
+                                <p class="speaker-occupation">NodeSource</p>
+
+                            </div>
 
                         </div>
 
@@ -202,43 +295,73 @@
 
         </div>
 
-    </div>
+        <div class="topic topic-break">
 
-    <div class="topic topic-talk">
+            <div class="wrapper">
 
-        <div class="wrapper">
+                <div class="row">
 
-            <div class="row">
+                    <div class="col-sm-2 time">10:40-10:50AM</div>
 
-                <div class="col-sm-10">
-              
-                    <h3 class="title">Node as a Movement: Building Community into Products</h3>
+                    <div class="col-sm-10">
 
-                    <p class="abstract">
-                        <b>Abstract</b> A successful product needs a community, but it takes a lot of work to build a community around a product. By leveraging Node, Technical Machine built a product with a vibrant community built in – and you can too.
-                    </p>
+                        <h3 class="title">Coffee Break</h3>
 
-                    <p class="bio">
-                        <b>About Kelsey</b> Kelsey is the Director of Community at Technical Machine, making Tessel. She has a degree in neural engineering from Olin College, a background as a maker at Instructables, and an interest in bringing open source principles to the world at large.
-                    </p>
+                    </div>
 
                 </div>
 
-                <div class="col-sm-2">
+            </div>
 
-                    <div class="row speaker">
+        </div>
 
-                        <div class="col-sm-12 col-xs-6 speaker-image">
-              
-                            <div class="hexagon-1" id="kelsey"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
+        <div class="topic topic-talk">
 
-                        </div>
+            <div class="wrapper">
 
-                        <div class="col-sm-12 col-xs-6 speaker-info">
+                <div class="row">
 
-                            <p class="speaker-name">Kelsey Breseman</p>
+                    <div class="col-sm-2 time">
 
-                            <p class="speaker-occupation">Tessel</p>
+                        10:50-11:25AM
+
+                        <div class="icon everywhere"></div>
+
+                    </div>
+
+                    <div class="col-sm-8">
+
+                        <h3 class="title">Integrating Node.js into your Ecosystem</h3>
+
+                        <p class="abstract">
+                            <b>Abstract</b> Adopting Node.js at your company, but don’t want to rebuild everything? Learn some pragmatic techniques for making Node.js play well in your existing infrastructure.
+                        </p>
+
+                        <p class="bio">
+                            <b>About Alex</b> Alex is a front end engineer that is passionate about building great user experiences on the open web stack. While he has spent his entire career building JavaScript applications on the desktop, browser, and server, he is still continually surprised by all the new and creative ways in which the community leverages JavaScript. Alex is presently a Senior UI Engineer at Netflix, and is part of the core team leading the migration of <a href="http://www.netflix.com" target="_blank">Netflix.com</a> to Node.js.
+                        </p>
+
+                    </div>
+
+                    <div class="col-sm-2">
+
+                        <div class="row speaker">
+
+                            <div class="col-sm-12 col-xs-6 speaker-image">
+                  
+                                <div class="hexagon-1" id="alex_liu"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
+
+                            </div>
+
+                            <div class="col-sm-12 col-xs-6 speaker-info">
+
+                                <p class="speaker-name">Alex Liu</p>
+
+                                <p class="speaker-tag"><a href="https://twitter.com/stinkydofu" target="_blank">@stinkydofu</a></p>
+
+                                <p class="speaker-occupation">Netflix</p>
+
+                            </div>
 
                         </div>
 
@@ -250,43 +373,52 @@
 
         </div>
 
-    </div>
+        <div class="topic topic-talk">
 
-    <div class="topic topic-talk">
+            <div class="wrapper">
 
-        <div class="wrapper">
+                <div class="row">
 
-            <div class="row">
+                    <div class="col-sm-2 time">
 
-                <div class="col-sm-10">
-              
-                    <h3 class="title">Node.js for Java Engineers.</h3>
+                        11:25-12:00PM
 
-                    <p class="abstract">
-                        <b>Abstract</b> Moving from Java to Node.js presents some unique challenges. There are some meaningful differences in the ecosystems as well as a lot of positive things enterprise Java skills can offer the Node.js community.
-                    </p>
+                        <div class="icon enterprise"></div>
 
-                    <p class="bio">
-                        <b>About Ryan</b> Ryan began his career over 11 years ago building enterprise core systems to run banks and credit unions. It was there Ryan helped implement a rules engine using the Rhino JavaScript runtime and saw the power of running JavaScript on the server. When Ryan started building complex Node.js applications in 2011, he knew JavaScript had found a home outside of the browser. As a seasoned Engineering Manager, Ryan is passionate about optimizing a team's workflow around the strengths of Node.js. He wants to inspire others to build great Node.js applications by promoting modular design, continuous release best practices, and the benefits of utilizing a private npm instance.
-                    </p>
+                    </div>
 
-                </div>
+                    <div class="col-sm-8">
 
-                <div class="col-sm-2">
+                        <h3 class="title">Building a Node platform to enable your dev teams to MOVE FAST</h3>
 
-                    <div class="row speaker">
+                        <p class="abstract">
+                            <b>Abstract</b> It’s hard to turn a large ship, but big companies can move nimbly by dividing and conquering problems.  Intuit has built a node service platform; the core idea is that the Platform team figures out the solutions to the infrastructure problems (hosting, monitoring, managing, upstart, clustering, updating, etc) in designs to support many services.  Many dev teams across the company can focus on solving their customer problem and their service’s business logic.
+                            <br /><br />Here’s how we set out to do it, what worked well, what we learned, and what we still really need to do.  (Spoiler: we expect 25 million customers to use this stack.)
+                        </p>
 
-                        <div class="col-sm-12 col-xs-6 speaker-image">
-              
-                            <div class="hexagon-1" id="ryan_stevens"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
+                        <p class="bio">
+                            <b>About Vinay</b> Vinay Kumar grew his way up from straight out of college, primarily as a back-end engineer, working on teams that massively improved the availability, operability, scalability and performance of TurboTax Online.  Now a Distinguished Architect of Intuit’s Consumer Tax Group, Vinay is passionate about enabling developers to build experiences and services productively and enjoyably.
+                        </p>
 
-                        </div>
+                    </div>
 
-                        <div class="col-sm-12 col-xs-6 speaker-info">
+                    <div class="col-sm-2">
 
-                            <p class="speaker-name">Ryan Stevens</p>
+                        <div class="row speaker">
 
-                            <p class="speaker-occupation">NodeSource</p>
+                            <div class="col-sm-12 col-xs-6 speaker-image">
+                  
+                                <div class="hexagon-1" id="vinay"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
+
+                            </div>
+
+                            <div class="col-sm-12 col-xs-6 speaker-info">
+
+                                <p class="speaker-name">Vinay Kumar</p>
+
+                                <p class="speaker-occupation">Intuit</p>
+
+                            </div>
 
                         </div>
 
@@ -298,43 +430,73 @@
 
         </div>
 
-    </div>
+        <div class="topic topic-lunch">
 
-    <div class="topic topic-talk">
+            <div class="wrapper">
 
-        <div class="wrapper">
+                <div class="row">
 
-            <div class="row">
+                    <div class="col-sm-2 time">12:00-1:30PM</div>
 
-                <div class="col-sm-10">
-              
-                    <h3 class="title">State of Node</h3>
+                    <div class="col-sm-10">
 
-                    <p class="abstract">
-                        <b>Abstract</b> Node v0.12 has been a long time coming, and there are plenty of features to show for it along with V8 improvements and API additions. We'll explore some of these new features along with how to prepare for the transition.
-                    </p>
+                        <h3 class="title">Lunch</h3>
 
-                    <p class="bio">
-                        <b>About Trevor</b> Trevor Norris began as a front-end developer who enjoyed Node.js as a hobby. While working at Mozilla he was able to contribute to Node more seriously. One thing led to another and now he's working full-time as a Node core maintainer at NodeSource where he has the freedom to make sure the project continuously improves as a whole. Along with working on his constant obsession of improving performance.
-                    </p>
+                        <p class="description"></p>
+
+                    </div>
 
                 </div>
 
-                <div class="col-sm-2">
+            </div>
 
-                    <div class="row speaker">
+        </div>
 
-                        <div class="col-sm-12 col-xs-6 speaker-image">
-              
-                            <div class="hexagon-1" id="trevor_norris"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
+        <div class="topic topic-talk">
 
-                        </div>
+            <div class="wrapper">
 
-                        <div class="col-sm-12 col-xs-6 speaker-info">
+                <div class="row">
 
-                            <p class="speaker-name">Trevor Norris</p>
+                    <div class="col-sm-2 time">
 
-                            <p class="speaker-occupation">NodeSource</p>
+                        1:30-2:05PM
+
+                        <div class="icon enterprise"></div>
+
+                    </div>
+
+                    <div class="col-sm-8">
+
+                        <h3 class="title">State of Node</h3>
+
+                        <p class="abstract">
+                            <b>Abstract</b> Node v0.12 has been a long time coming, and there are plenty of features to show for it along with V8 improvements and API additions. We'll explore some of these new features along with how to prepare for the transition.
+                        </p>
+
+                        <p class="bio">
+                            <b>About Trevor</b> Trevor Norris began as a front-end developer who enjoyed Node.js as a hobby. While working at Mozilla he was able to contribute to Node more seriously. One thing led to another and now he's working full-time as a Node core maintainer at NodeSource where he has the freedom to make sure the project continuously improves as a whole. Along with working on his constant obsession of improving performance.
+                        </p>
+
+                    </div>
+
+                    <div class="col-sm-2">
+
+                        <div class="row speaker">
+
+                            <div class="col-sm-12 col-xs-6 speaker-image">
+                  
+                                <div class="hexagon-1" id="trevor_norris"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
+
+                            </div>
+
+                            <div class="col-sm-12 col-xs-6 speaker-info">
+
+                                <p class="speaker-name">Trevor Norris</p>
+
+                                <p class="speaker-occupation">NodeSource</p>
+
+                            </div>
 
                         </div>
 
@@ -346,23 +508,427 @@
 
         </div>
 
-    </div>
+        <div class="topic topic-talk">
 
-</section>
+            <div class="wrapper">
 
-<section class="compact">
+                <div class="row">
 
-    <div class="topic topic-init">
+                    <div class="col-sm-2 time">
+
+                        2:05-2:40PM
+
+                        <div class="icon core"></div>
+
+                    </div>
+
+                    <div class="col-sm-8">
+
+                        <h3 class="title">Node as a Movement: Building Community into Products</h3>
+
+                        <p class="abstract">
+                            <b>Abstract</b> A successful product needs a community, but it takes a lot of work to build a community around a product. By leveraging Node, Technical Machine built a product with a vibrant community built in – and you can too.
+                        </p>
+
+                        <p class="bio">
+                            <b>About Kelsey</b> Kelsey is the Director of Community at Technical Machine, making Tessel. She has a degree in neural engineering from Olin College, a background as a maker at Instructables, and an interest in bringing open source principles to the world at large.
+                        </p>
+
+                    </div>
+
+                    <div class="col-sm-2">
+
+                        <div class="row speaker">
+
+                            <div class="col-sm-12 col-xs-6 speaker-image">
+                  
+                                <div class="hexagon-1" id="kelsey"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
+
+                            </div>
+
+                            <div class="col-sm-12 col-xs-6 speaker-info">
+
+                                <p class="speaker-name">Kelsey Breseman</p>
+
+                                <p class="speaker-occupation">Tessel</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+<!--         <div class="topic topic-break">
+
+            <div class="wrapper">
+
+                <div class="row">
+
+                    <div class="col-sm-2 time">2:40-3:00PM</div>
+
+                    <div class="col-sm-10">
+
+                        <h3 class="title">Break</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div> -->
+
+       <!--  <div class="topic topic-break">
+
+            <div class="wrapper">
+
+                <div class="row">
+
+                    <div class="col-sm-2 time">4:10-4:30PM</div>
+
+                    <div class="col-sm-10">
+
+                        <h3 class="title">Afternoon Tea</h3>
+
+                        <p class="description">Coffee/Tea and snacks will be provided outside the main room.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div> -->
+
+       <!--  <div class="topic topic-talk">
+
+            <div class="wrapper">
+
+                <div class="row">
+
+                    <div class="col-sm-2 time">
+
+                        4:30-5:30PM
+
+                        <div class="icon enterprise"></div>
+
+                    </div>
+
+                    <div class="col-sm-10">
+
+                        <h3 class="title">Panel Discussion</h3>
+
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum....</p>
+
+                        <p class="link">
+                            <span>Video:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
+                        </p>
+
+                        <h4 class="subtitle">Participants</h3>
+
+                            <div class="row">
+
+                                <div class="col-sm-2 participant">
+
+                                    <div class="row speaker">
+
+                                        <div class="col-sm-12 col-xs-6 speaker-image">
+
+                                            <div class="hexagon-1" id="iggy">
+                                                <div class="hexagon-2">
+                                                    <div class="hexagon-3"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-sm-12 col-xs-6 speaker-info">
+
+                                            <p class="speaker-name">Iggy Pop</p>
+
+                                            <p class="speaker-occupation">Pop Star</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-2 participant">
+
+                                    <div class="row speaker">
+
+                                        <div class="col-sm-12 col-xs-6 speaker-image">
+
+                                            <div class="hexagon-1" id="iggy">
+                                                <div class="hexagon-2">
+                                                    <div class="hexagon-3"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-sm-12 col-xs-6 speaker-info">
+
+                                            <p class="speaker-name">Iggy Pop</p>
+
+                                            <p class="speaker-occupation">Pop Star</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-2 participant">
+
+                                    <div class="row speaker">
+
+                                        <div class="col-sm-12 col-xs-6 speaker-image">
+
+                                            <div class="hexagon-1" id="iggy">
+                                                <div class="hexagon-2">
+                                                    <div class="hexagon-3"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-sm-12 col-xs-6 speaker-info">
+
+                                            <p class="speaker-name">Iggy Pop</p>
+
+                                            <p class="speaker-occupation">Pop Star</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-2 participant">
+
+                                    <div class="row speaker">
+
+                                        <div class="col-sm-12 col-xs-6 speaker-image">
+
+                                            <div class="hexagon-1" id="iggy">
+                                                <div class="hexagon-2">
+                                                    <div class="hexagon-3"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-sm-12 col-xs-6 speaker-info">
+
+                                            <p class="speaker-name">Iggy Pop</p>
+
+                                            <p class="speaker-occupation">Pop Star</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-2 participant">
+
+                                    <div class="row speaker">
+
+                                        <div class="col-sm-12 col-xs-6 speaker-image">
+
+                                            <div class="hexagon-1" id="iggy">
+                                                <div class="hexagon-2">
+                                                    <div class="hexagon-3"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-sm-12 col-xs-6 speaker-info">
+
+                                            <p class="speaker-name">Iggy Pop</p>
+
+                                            <p class="speaker-occupation">Pop Star</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-2 participant">
+
+                                    <div class="row speaker">
+
+                                        <div class="col-sm-12 col-xs-6 speaker-image">
+
+                                            <div class="hexagon-1" id="iggy">
+                                                <div class="hexagon-2">
+                                                    <div class="hexagon-3"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-sm-12 col-xs-6 speaker-info">
+
+                                            <p class="speaker-name">Iggy Pop</p>
+
+                                            <p class="speaker-occupation">Pop Star</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-2 participant">
+
+                                    <div class="row speaker">
+
+                                        <div class="col-sm-12 col-xs-6 speaker-image">
+
+                                            <div class="hexagon-1" id="iggy">
+                                                <div class="hexagon-2">
+                                                    <div class="hexagon-3"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-sm-12 col-xs-6 speaker-info">
+
+                                            <p class="speaker-name">Iggy Pop</p>
+
+                                            <p class="speaker-occupation">Pop Star</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-2 participant">
+
+                                    <div class="row speaker">
+
+                                        <div class="col-sm-12 col-xs-6 speaker-image">
+
+                                            <div class="hexagon-1" id="iggy">
+                                                <div class="hexagon-2">
+                                                    <div class="hexagon-3"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-sm-12 col-xs-6 speaker-info">
+
+                                            <p class="speaker-name">Iggy Pop</p>
+
+                                            <p class="speaker-occupation">Pop Star</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-2 participant">
+
+                                    <div class="row speaker">
+
+                                        <div class="col-sm-12 col-xs-6 speaker-image">
+
+                                            <div class="hexagon-1" id="iggy">
+                                                <div class="hexagon-2">
+                                                    <div class="hexagon-3"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-sm-12 col-xs-6 speaker-info">
+
+                                            <p class="speaker-name">Iggy Pop</p>
+
+                                            <p class="speaker-occupation">Pop Star</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div> -->
+
+        <div class="topic topic-init">
+
+            <div class="wrapper">
+
+                <div class="row">
+
+                    <div class="col-sm-10">
+
+                        <h3 class="title">More to be announced!</h3>
+
+                        <p class="description">Additional speakers will be announced as we get closer to the conference date.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="location" aria-labelledby="locationLabel">
 
         <div class="wrapper">
 
+            <h2 id="locationLabel">Location</h2>
+
             <div class="row">
 
-                <div class="col-sm-10">
-          
-                    <h3 class="title">More to be announced!</h3>
+                <div id="theMap" class="col-md-6">
 
-                    <p class="description">Additional speakers will be announced as we get closer to the conference date.</p>
+
+                    <iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;hl=en&amp;q=Intuit+Bldg+6,+2750+Coast+Ave,+Mountain+View,+CA+94043&amp;ie=UTF8&amp;hq=&amp;t=m&amp;ll=37.430414,-122.0988051&amp;spn=0.010231,0.012875&amp;z=12&amp;output=embed"></iframe>
+
+                </div>
+
+                <div id="theAddress" class="col-md-6">
+
+                    <h3>Intuit Mountain View Campus</h3>
+
+                    <p>
+                        <b>Intuit, Inc.</b>
+                        <br />Building #6
+                        <br/>2675 Coast Ave
+                        <br/>Mountain View, CA 94043
+                    </p>
+
+                    <p>
+                        <a href="https://www.google.com/maps/place/Intuit+Bldg+6,+2750+Coast+Ave,+Mountain+View,+CA+94043/@37.430414,-122.0988051,17z/data=!3m1!4b1!4m2!3m1!1s0x808fba162a0a9cab:0xe88ce30395b86747" target="_blank">Map Link</a>
+                    </p>
 
                 </div>
 
@@ -370,976 +936,42 @@
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <section id="registration" aria-labelledby="registrationLabel">
 
-<!-- <section id="topics" aria-labelledby="topicsLabel">
+        <div class="subContent wrapper">
 
-  <div class="wrapper">
+            <h2 id="registrationLabel">Register</h2>
 
-    <h2 id="topicsLabel">Topics &amp; Agenda</h2>
+            <p>
+                Register now and secure your spot for the 2014 NodeDay conference, December 5th, hosted by Intuit.
+            </p>
 
-  </div>
-
-  <div class="topic topic-init">
-
-    <div class="wrapper">
-
-      <div class="row">
-        
-        <div class="col-sm-2 time">8:00-9:00AM</div>
-
-        <div class="col-sm-10">
-          
-          <h3 class="title">Check-In and Registration</h3>
-
-          <p class="description">Coffee and snacks will be provided outside the main room.</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="topic topic-talk">
-
-    <div class="wrapper">
-
-      <div class="row">
-        
-        <div class="col-sm-2 time">9:00-9:15AM</div>
-
-        <div class="col-sm-10">
-          
-          <h3 class="title">Welcome</h3>
-
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum....</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="topic topic-talk">
-
-    <div class="wrapper">
-
-      <div class="row">
-        
-        <div class="col-sm-2 time">
-
-          9:15-9:50AM
-
-          <div class="icon core"></div>
-
-        </div>
-
-        <div class="col-sm-8">
-          
-          <h3 class="title">Talk 1 Placeholder</h3>
-
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum....</p>
-
-          <p class="link">
-            <span>Presentation:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-          <p class="link">
-            <span>Video:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-        </div>
-
-        <div class="col-sm-2">
-
-          <div class="row speaker">
-
-            <div class="col-sm-12 col-xs-6 speaker-image">
-          
-              <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-            </div>
-
-            <div class="col-sm-12 col-xs-6 speaker-info">
-
-              <p class="speaker-name">Iggy Pop</p>
-
-              <p class="speaker-occupation">Pop Star</p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="topic topic-talk">
-
-    <div class="wrapper">
-
-      <div class="row">
-        
-        <div class="col-sm-2 time">
-
-          9:50-10:25AM
-
-          <div class="icon enterprise"></div>
-
-        </div>
-
-        <div class="col-sm-8">
-          
-          <h3 class="title">Talk 2 Placeholder</h3>
-
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum....</p>
-
-          <p class="link">
-            <span>Presentation:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-          <p class="link">
-            <span>Video:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-        </div>
-
-        <div class="col-sm-2">
-          
-          <div class="row speaker">
-
-            <div class="col-sm-12 col-xs-6 speaker-image">
-          
-              <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-            </div>
-
-            <div class="col-sm-12 col-xs-6 speaker-info">
-
-              <p class="speaker-name">Iggy Pop</p>
-
-              <p class="speaker-occupation">Pop Star</p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="topic topic-talk">
-
-    <div class="wrapper">
-
-      <div class="row">
-        
-        <div class="col-sm-2 time">
-    
-          10:25-11:00AM
-
-          <div class="icon everywhere"></div>
-  
-        </div>
-
-        <div class="col-sm-8">
-          
-          <h3 class="title">Talk 3 Placeholder</h3>
-
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum....</p>
-
-          <p class="link">
-            <span>Presentation:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-          <p class="link">
-            <span>Video:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-        </div>
-
-        <div class="col-sm-2">
-          
-          <div class="row speaker">
-
-            <div class="col-sm-12 col-xs-6 speaker-image">
-          
-              <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-            </div>
-
-            <div class="col-sm-12 col-xs-6 speaker-info">
-
-              <p class="speaker-name">Iggy Pop</p>
-
-              <p class="speaker-occupation">Pop Star</p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="topic topic-break">
-
-    <div class="wrapper">
-
-      <div class="row">
-        
-        <div class="col-sm-2 time">11:00-11:10AM</div>
-
-        <div class="col-sm-10">
-          
-          <h3 class="title">Coffee Break</h3>
-
-          <p class="description">Coffee and snacks will be provided outside the main room.</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="topic topic-talk">
-
-    <div class="wrapper">
-
-      <div class="row">
-        
-        <div class="col-sm-2 time">
-    
-          11:10-11:45AM
-
-          <div class="icon core"></div>
-  
-        </div>
-
-        <div class="col-sm-8">
-          
-          <h3 class="title">Talk 4 Placeholder</h3>
-
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum....</p>
-
-          <p class="link">
-            <span>Presentation:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-          <p class="link">
-            <span>Video:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-        </div>
-
-        <div class="col-sm-2">
-          
-          <div class="row speaker">
-
-            <div class="col-sm-12 col-xs-6 speaker-image">
-          
-              <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-            </div>
-
-            <div class="col-sm-12 col-xs-6 speaker-info">
-
-              <p class="speaker-name">Iggy Pop</p>
-
-              <p class="speaker-occupation">Pop Star</p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="topic topic-lunch">
-
-    <div class="wrapper">
-
-      <div class="row">
-        
-        <div class="col-sm-2 time">11:45-1:00PM</div>
-
-        <div class="col-sm-10">
-          
-          <h3 class="title">Lunch</h3>
-
-          <p class="description">Premo grub!</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="topic topic-talk">
-
-    <div class="wrapper">
-
-      <div class="row">
-        
-        <div class="col-sm-2 time">
-
-          1:00-1:35PM
-
-          <div class="icon core"></div>
-
-        </div>
-
-        <div class="col-sm-8">
-          
-          <h3 class="title">Talk 5 Placeholder</h3>
-
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum....</p>
-
-          <p class="link">
-            <span>Presentation:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-          <p class="link">
-            <span>Video:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-        </div>
-
-        <div class="col-sm-2">
-          
-          <div class="row speaker">
-
-            <div class="col-sm-12 col-xs-6 speaker-image">
-          
-              <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-            </div>
-
-            <div class="col-sm-12 col-xs-6 speaker-info">
-
-              <p class="speaker-name">Iggy Pop</p>
-
-              <p class="speaker-occupation">Pop Star</p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="topic topic-talk">
-
-    <div class="wrapper">
-
-      <div class="row">
-        
-        <div class="col-sm-2 time">
-
-          1:35-2:10PM
-
-          <div class="icon enterprise"></div>
-
-        </div>
-
-        <div class="col-sm-8">
-          
-          <h3 class="title">Talk 6 Placeholder</h3>
-
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum....</p>
-
-          <p class="link">
-            <span>Presentation:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-          <p class="link">
-            <span>Video:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-        </div>
-
-        <div class="col-sm-2">
-          
-          <div class="row speaker">
-
-            <div class="col-sm-12 col-xs-6 speaker-image">
-          
-              <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-            </div>
-
-            <div class="col-sm-12 col-xs-6 speaker-info">
-
-              <p class="speaker-name">Iggy Pop</p>
-
-              <p class="speaker-occupation">Pop Star</p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="topic topic-talk">
-
-    <div class="wrapper">
-
-      <div class="row">
-        
-        <div class="col-sm-2 time">
-    
-          2:10-2:45PM
-
-          <div class="icon everywhere"></div>
-  
-        </div>
-
-        <div class="col-sm-8">
-          
-          <h3 class="title">Talk 7 Placeholder</h3>
-
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum....</p>
-
-          <p class="link">
-            <span>Presentation:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-          <p class="link">
-            <span>Video:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-        </div>
-
-        <div class="col-sm-2">
-          
-          <div class="row speaker">
-
-            <div class="col-sm-12 col-xs-6 speaker-image">
-          
-              <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-            </div>
-
-            <div class="col-sm-12 col-xs-6 speaker-info">
-
-              <p class="speaker-name">Iggy Pop</p>
-
-              <p class="speaker-occupation">Pop Star</p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="topic topic-break">
-
-    <div class="wrapper">
-
-      <div class="row">
-        
-        <div class="col-sm-2 time">2:45-3:15PM</div>
-
-        <div class="col-sm-10">
-          
-          <h3 class="title">Afternoon Tea</h3>
-
-          <p class="description">Coffee and snacks will be provided outside the main room.</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="topic topic-talk">
-
-    <div class="wrapper">
-
-      <div class="row">
-        
-        <div class="col-sm-2 time">
-
-          3:15-3:50PM
-
-          <div class="icon core"></div>
-
-        </div>
-
-        <div class="col-sm-8">
-          
-          <h3 class="title">Talk 8 Placeholder</h3>
-
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum....</p>
-
-          <p class="link">
-            <span>Presentation:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-          <p class="link">
-            <span>Video:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-        </div>
-
-        <div class="col-sm-2">
-          
-          <div class="row speaker">
-
-            <div class="col-sm-12 col-xs-6 speaker-image">
-          
-              <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-            </div>
-
-            <div class="col-sm-12 col-xs-6 speaker-info">
-
-              <p class="speaker-name">Iggy Pop</p>
-
-              <p class="speaker-occupation">Pop Star</p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="topic topic-talk">
-
-    <div class="wrapper">
-
-      <div class="row">
-        
-        <div class="col-sm-2 time">
-
-          3:50-4:25PM
-
-          <div class="icon enterprise"></div>
-
-        </div>
-
-        <div class="col-sm-8">
-          
-          <h3 class="title">Talk 9 Placeholder</h3>
-
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum....</p>
-
-          <p class="link">
-            <span>Presentation:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-          <p class="link">
-            <span>Video:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-        </div>
-
-        <div class="col-sm-2">
-          
-          <div class="row speaker">
-
-            <div class="col-sm-12 col-xs-6 speaker-image">
-          
-              <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-            </div>
-
-            <div class="col-sm-12 col-xs-6 speaker-info">
-
-              <p class="speaker-name">Iggy Pop</p>
-
-              <p class="speaker-occupation">Pop Star</p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="topic topic-break">
-
-    <div class="wrapper">
-
-      <div class="row">
-        
-        <div class="col-sm-2 time">4:25-4:35PM</div>
-
-        <div class="col-sm-10">
-          
-          <h3 class="title">Coffee Break</h3>
-
-          <p class="description">Coffee and snacks will be provided outside the main room.</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="topic topic-talk">
-
-    <div class="wrapper">
-
-      <div class="row">
-        
-        <div class="col-sm-2 time">
-
-          4:35-5:35PM
-
-          <div class="icon enterprise"></div>
-
-        </div>
-
-        <div class="col-sm-10">
-          
-          <h3 class="title">Panel Discussion</h3>
-
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum....</p>
-
-          <p class="link">
-            <span>Video:</span> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
-          </p>
-
-          <h4 class="subtitle">Participants</h3>
-
-            <div class="row">
-            
-              <div class="col-sm-2 participant">
-          
-                <div class="row speaker">
-
-                  <div class="col-sm-12 col-xs-6 speaker-image">
-                
-                    <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-                  </div>
-
-                  <div class="col-sm-12 col-xs-6 speaker-info">
-
-                    <p class="speaker-name">Iggy Pop</p>
-
-                    <p class="speaker-occupation">Pop Star</p>
-
-                  </div>
-
+            <div style="width:100%; text-align:left;">
+                <iframe src="http://eventbrite.com/tickets-external?eid=13558017395&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                <div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;"><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Event registration</a>
+                    <span style="color:#ddd;">for</span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.com/e/nodeday-2014-tickets-13558017395?ref=etckt">NodeDay 2014</a> 
+                    <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a>
                 </div>
-
-              </div>
-
-              <div class="col-sm-2 participant">
-          
-                <div class="row speaker">
-
-                  <div class="col-sm-12 col-xs-6 speaker-image">
-                
-                    <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-                  </div>
-
-                  <div class="col-sm-12 col-xs-6 speaker-info">
-
-                    <p class="speaker-name">Iggy Pop</p>
-
-                    <p class="speaker-occupation">Pop Star</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="col-sm-2 participant">
-          
-                <div class="row speaker">
-
-                  <div class="col-sm-12 col-xs-6 speaker-image">
-                
-                    <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-                  </div>
-
-                  <div class="col-sm-12 col-xs-6 speaker-info">
-
-                    <p class="speaker-name">Iggy Pop</p>
-
-                    <p class="speaker-occupation">Pop Star</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="col-sm-2 participant">
-          
-                <div class="row speaker">
-
-                  <div class="col-sm-12 col-xs-6 speaker-image">
-                
-                    <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-                  </div>
-
-                  <div class="col-sm-12 col-xs-6 speaker-info">
-
-                    <p class="speaker-name">Iggy Pop</p>
-
-                    <p class="speaker-occupation">Pop Star</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="col-sm-2 participant">
-          
-                <div class="row speaker">
-
-                  <div class="col-sm-12 col-xs-6 speaker-image">
-                
-                    <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-                  </div>
-
-                  <div class="col-sm-12 col-xs-6 speaker-info">
-
-                    <p class="speaker-name">Iggy Pop</p>
-
-                    <p class="speaker-occupation">Pop Star</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="col-sm-2 participant">
-          
-                <div class="row speaker">
-
-                  <div class="col-sm-12 col-xs-6 speaker-image">
-                
-                    <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-                  </div>
-
-                  <div class="col-sm-12 col-xs-6 speaker-info">
-
-                    <p class="speaker-name">Iggy Pop</p>
-
-                    <p class="speaker-occupation">Pop Star</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="col-sm-2 participant">
-          
-                <div class="row speaker">
-
-                  <div class="col-sm-12 col-xs-6 speaker-image">
-                
-                    <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-                  </div>
-
-                  <div class="col-sm-12 col-xs-6 speaker-info">
-
-                    <p class="speaker-name">Iggy Pop</p>
-
-                    <p class="speaker-occupation">Pop Star</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="col-sm-2 participant">
-          
-                <div class="row speaker">
-
-                  <div class="col-sm-12 col-xs-6 speaker-image">
-                
-                    <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-                  </div>
-
-                  <div class="col-sm-12 col-xs-6 speaker-info">
-
-                    <p class="speaker-name">Iggy Pop</p>
-
-                    <p class="speaker-occupation">Pop Star</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="col-sm-2 participant">
-          
-                <div class="row speaker">
-
-                  <div class="col-sm-12 col-xs-6 speaker-image">
-                
-                    <div class="hexagon-1" id="iggy"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-                  </div>
-
-                  <div class="col-sm-12 col-xs-6 speaker-info">
-
-                    <p class="speaker-name">Iggy Pop</p>
-
-                    <p class="speaker-occupation">Pop Star</p>
-
-                  </div>
-
-                </div>
-
-              </div>
-
             </div>
-
-          </div>
 
         </div>
 
-      </div>
+    </section>
 
-    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-  </div>
-
-</section> -->
-
-<section id="location" aria-labelledby="locationLabel">
-
-  <div class="wrapper">
-
-    <h2 id="locationLabel">Location</h2>
-
-    <div class="row">
-
-      <div id="theMap" class="col-md-6">
-
-    
-        <iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                src="https://maps.google.com/maps?f=q&amp;hl=en&amp;q=Intuit+Bldg+6,+2750+Coast+Ave,+Mountain+View,+CA+94043&amp;ie=UTF8&amp;hq=&amp;t=m&amp;ll=37.430414,-122.0988051&amp;spn=0.010231,0.012875&amp;z=12&amp;output=embed"></iframe>
-
-      </div>
-
-      <div id="theAddress" class="col-md-6">
-
-        <h3>Intuit Mountain View Campus</h3>
-
-        <p>
-          <b>Intuit, Inc.</b>
-          <br /> Building #6
-          <br/> 2675 Coast Ave
-          <br/> Mountain View, CA 94043
-        </p>
-
-        <p>
-          <a href="https://www.google.com/maps/place/Intuit+Bldg+6,+2750+Coast+Ave,+Mountain+View,+CA+94043/@37.430414,-122.0988051,17z/data=!3m1!4b1!4m2!3m1!1s0x808fba162a0a9cab:0xe88ce30395b86747" target="_blank">Map Link</a>
-        </p>
-
-      </div>  
-    
-    </div>
-
-  </div>
-
-</section>
-
-<section id="registration" aria-labelledby="registrationLabel">
-
-  <div class="subContent wrapper">
-
-    <h2 id="registrationLabel">Register</h2>
-
-    <p>
-      Register now and secure your spot for the 2014 NodeDay conference, December 5th, hosted by Intuit.
-    </p>
-
-    <div style="width:100%; text-align:left;" ><iframe  src="http://eventbrite.com/tickets-external?eid=13558017395&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Event registration</a><span style="color:#ddd;"> for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.com/e/nodeday-2014-tickets-13558017395?ref=etckt">NodeDay 2014</a> <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
-
-  </div>
-
-</section>
-
-<script src="js/app.js"></script>
-<script>
-    (function (i, s, o, g, r, a, m) {
+    <script src="js/app.js"></script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
+        i[r] = i[r] || function() {
             (i[r].q = i[r].q || []).push(arguments)
         }, i[r].l = 1 * new Date();
         a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
+            m = s.getElementsByTagName(o)[0];
         a.async = 1;
         a.src = g;
         m.parentNode.insertBefore(a, m)
@@ -1347,7 +979,7 @@
 
     ga('create', 'UA-46851283-1', 'nodeday.com');
     ga('send', 'pageview');
-
-</script>
+    </script>
 </body>
+
 </html>

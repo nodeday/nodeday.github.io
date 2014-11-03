@@ -168,6 +168,7 @@ body > section h3 {
   font-weight: bold;
   font-size: 2rem;
   text-align: left;
+  margin-top: 20px;
 }
 
 .topic .abstract {
@@ -253,6 +254,10 @@ body > section h3 {
 
 .topic .speaker #trevor_norris .hexagon-3 {
   background-image: url(../img/trevor_norris.png);
+}
+
+.topic .speaker #vinay .hexagon-3 {
+  background-image: url(../img/vinay.png);
 }
 
 
@@ -392,7 +397,6 @@ body > section h3 {
         -ms-transform: rotate(120deg);
          -o-transform: rotate(120deg);
             transform: rotate(120deg);
-    cursor: pointer;
     padding-bottom: 200%;
     margin: -42% 0;
   }
