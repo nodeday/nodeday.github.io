@@ -119,7 +119,7 @@ body > section h3 {
     margin: 10px auto 20px;
     height: 80px;
     border-radius: 10px;
-    
+    white-space:nowrap;
 }
 #hero .action .button span {
     background: #3FA9F5;
@@ -132,6 +132,7 @@ body > section h3 {
     font-weight: 700;
     font-size: 2em;
     line-height: 80px;
+    white-space:nowrap;
 }
 
 #about {
@@ -229,6 +230,9 @@ body > section h3 {
 .topic .speaker #vinay .hexagon-3 {
     background-image: url(../img/vinay.png);
 }
+.topic .speaker #matt .hexagon-3 {
+    background-image: url(../img/matt.png);
+}
 .topic .speaker-info {
     margin-top: 42px;
     text-align: left;
@@ -309,21 +313,9 @@ body > section h3 {
         width: 335px;
         height: 80px;
         line-height: 70px;
-        box-shadow: 0px 3px rgba(128, 128, 128, 1),
-        0px 4px rgba(118, 118, 118, 1), 0px 5px rgba(108, 108, 108, 1), 0px 6px rgba(98, 98, 98, 1), 0px 7px rgba(88, 88, 88, 1), 0px 8px rgba(78, 78, 78, 1), 0px 14px 6px -1px rgba(128, 128, 128, 1);
-        /* shadow */
-    
-    transition: -webkit-box-shadow .1s ease-in-out;
     }
     #hero .action .button span {
-        padding: 0 51px;
-        transition: -webkit-transform .1s ease-in-out;
-    }
-    .button:active {
-        -webkit-box-shadow: 0px 3px rgba(128, 128, 128, 1), 0px 4px rgba(118, 118, 118, 1), 0px 5px rgba(108, 108, 108, 1), 0px 6px rgba(98, 98, 98, 1), 0px 7px rgba(88, 88, 88, 1), 0px 8px rgba(78, 78, 78, 1), 0px 10px 2px 0px rgba(128, 128, 128, .6);
-    }
-    .button:active span {
-        -webkit-transform: translate(0, 5px);
+        width: 335px;
     }
     .topic .time {
         font-size: 1.5rem;
