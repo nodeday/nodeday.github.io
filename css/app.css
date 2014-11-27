@@ -142,6 +142,17 @@ body > section h3 {
 #about h2 {
     color: #fff;
 }
+
+#feed .twitter-feed {
+    border-bottom: 1px solid #ccc;
+}
+
+#feed .twitter-feed iframe {
+    float: none; 
+    width: 100% !important;  
+    height: 500px !important;
+}
+
 .topic {
     padding: 20px 0;
 }
