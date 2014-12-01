@@ -142,6 +142,17 @@ body > section h3 {
 #about h2 {
     color: #fff;
 }
+
+#feed .twitter-feed {
+    border-bottom: 1px solid #ccc;
+}
+
+#feed .twitter-feed iframe {
+    float: none; 
+    width: 100% !important;  
+    height: 500px !important;
+}
+
 .topic {
     padding: 20px 0;
 }
@@ -232,6 +243,27 @@ body > section h3 {
 }
 .topic .speaker #matt .hexagon-3 {
     background-image: url(../img/matt.png);
+}
+.topic .speaker #nat .hexagon-3 {
+    background-image: url(../img/nat.png);
+}
+.topic .speaker #michele .hexagon-3 {
+    background-image: url(../img/michele.png);
+}
+.topic .speaker #alex .hexagon-3 {
+    background-image: url(../img/alex.png);
+}
+.topic .speaker #jeff .hexagon-3 {
+    background-image: url(../img/jeff.png);
+}
+.topic .speaker #dshaw .hexagon-3 {
+    background-image: url(../img/dan.png);
+}
+.topic .speaker #chris .hexagon-3 {
+    background-image: url(../img/chris.png);
+}
+.topic .speaker #scott .hexagon-3 {
+    background-image: url(../img/scott.png);
 }
 .topic .speaker-info {
     margin-top: 42px;
