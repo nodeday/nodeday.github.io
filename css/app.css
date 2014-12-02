@@ -153,6 +153,10 @@ body > section h3 {
     height: 500px !important;
 }
 
+#topics {
+    padding-bottom: 0;
+}
+
 .topic {
     padding: 20px 0;
 }
