@@ -143,6 +143,19 @@ body > section h3 {
     color: #fff;
 }
 
+#youtubeVideo {
+    background: #3FA9F5;
+    color: #fff;
+}
+#youtubeVideo h2 {
+    color: #fff;
+}
+
+#youtubeVideo iframe {
+    display: block;
+    margin: 0 auto;
+}
+
 #feed .twitter-feed {
     border-bottom: 1px solid #ccc;
 }
@@ -161,7 +174,7 @@ body > section h3 {
     padding: 20px 0;
 }
 .topic:nth-child(even) {
-    background: #eeeeee;
+    background: #f9f9f9;
 }
 .topic .time {
     color: #FF931E;
@@ -245,6 +258,9 @@ body > section h3 {
 .topic .speaker #vinay .hexagon-3 {
     background-image: url(../img/vinay.png);
 }
+.topic .speaker #chetan .hexagon-3 {
+    background-image: url(../img/chetan.png);
+}
 .topic .speaker #matt .hexagon-3 {
     background-image: url(../img/matt.png);
 }
@@ -286,6 +302,7 @@ body > section h3 {
     color: #B3B3B3;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
+    font-size: .75em;
 }
 .topic.topic-init, .topic.topic-init .time, .topic.topic-init h2, .topic.topic-break, .topic.topic-break .time, .topic.topic-break h2, .topic.topic-lunch, .topic.topic-lunch .time, .topic.topic-lunch h2 {
     color: #fff;
