@@ -143,6 +143,19 @@ body > section h3 {
     color: #fff;
 }
 
+#youtubeVideo {
+    background: #3FA9F5;
+    color: #fff;
+}
+#youtubeVideo h2 {
+    color: #fff;
+}
+
+#youtubeVideo iframe {
+    display: block;
+    margin: 0 auto;
+}
+
 #feed .twitter-feed {
     border-bottom: 1px solid #ccc;
 }
