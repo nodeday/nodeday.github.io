@@ -352,8 +352,6 @@ body > section h3 {
     #hero {
         background: url(../img/hero_bg.jpg) center center no-repeat;
         background-size: cover;
-        min-height: 660px;
-        padding-top: 40px;
     }
     #hero .splash {
         max-width: 400px;
