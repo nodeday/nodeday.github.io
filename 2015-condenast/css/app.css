@@ -18,6 +18,10 @@ a {
 a:hover {
     color: #7ac943;
 }
+
+a.same-color:hover{
+    color: #3fa9f5;
+}
 .wrapper {
     max-width: 900px;
     margin: 0 auto;
