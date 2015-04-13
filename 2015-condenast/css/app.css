@@ -262,6 +262,10 @@ body > section h3 {
 .topic .speaker #colin_vernon .hexagon-3 {
     background-image: url(../img/Colin-Vernon.png);
 }
+.topic .speaker #lin_clark .hexagon-3 {
+    background-image: url(../img/Lin-Clark.jpg);
+    background-size: 115%;
+}
 .topic .speaker #travell_perkins .hexagon-3 {
     background-image: url(../img/Travell-Perkins.png);
 }
