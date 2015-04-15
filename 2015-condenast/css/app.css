@@ -286,6 +286,10 @@ body > section h3 {
 .topic .speaker #ryan_juang .hexagon-3 {
     background-image: url(../img/Ryan-Juang.png);
 }
+.topic .speaker #clifton .hexagon-3 {
+    background-image: url(../img/Clifton.png);
+    background-size: 115%;
+}
 .topic .speaker-info {
     margin-top: 42px;
     text-align: left;
