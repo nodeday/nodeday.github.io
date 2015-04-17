@@ -294,6 +294,9 @@ body > section h3 {
     background-image: url(../img/Clifton.png);
     background-size: 115%;
 }
+.topic .speaker #emily_rose .hexagon-3 {
+    background-image: url(../img/Emily-Rose.png);
+}
 .topic .speaker-info {
     margin-top: 42px;
     text-align: left;
