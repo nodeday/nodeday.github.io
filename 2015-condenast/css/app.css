@@ -297,6 +297,11 @@ body > section h3 {
 .topic .speaker #emily_rose .hexagon-3 {
     background-image: url(../img/Emily-Rose.png);
 }
+
+.topic .speaker #cian .hexagon-3 {
+    background-image: url(../img/Cian-O_Maidin.png);
+}
+
 .topic .speaker-info {
     margin-top: 42px;
     text-align: left;
