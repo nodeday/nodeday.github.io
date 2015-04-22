@@ -299,7 +299,11 @@ body > section h3 {
 }
 
 .topic .speaker #cian .hexagon-3 {
-    background-image: url(../img/Cian-O_Maidin.png);
+     background-image: url(../img/Cian-O_Maidin.png);
+ }
+
+.topic .speaker #wayne_warner .hexagon-3 {
+    background-image: url(../img/Wayne-Warner.png);
 }
 
 .topic .speaker-info {
