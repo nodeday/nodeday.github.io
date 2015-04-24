@@ -98,7 +98,8 @@ body > section h3 {
 }
 
 .well-about{
-  background-color: #C0E892;
+  background-color: transparent;
+  font-size: 14px;
 }
 
 #hero {
