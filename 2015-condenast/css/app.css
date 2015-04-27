@@ -309,7 +309,11 @@ body > section h3 {
  }
 
 .topic .speaker #wayne_warner .hexagon-3 {
-    background-image: url(../img/Wayne-Warner.png);
+   background-image: url(../img/Wayne-Warner.png);
+ }
+
+.topic .speaker #ms{
+  background-image: url(../img/MSFT_logo.png);
 }
 
 .topic .speaker-info {
