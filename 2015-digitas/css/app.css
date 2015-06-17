@@ -248,6 +248,9 @@ body > section h3 {
     transform: rotate(-60deg);
 }
 
+.topic .speaker #ian_crowther .hexagon-3{
+    background-image: url(../img/Ian-Crowther.png);
+}
 .topic .speaker #luca_maraschi .hexagon-3{
     background-image: url(../img/Luca-Maraschi.png);
 }
@@ -257,11 +260,9 @@ body > section h3 {
 .topic .speaker #robert_kuo .hexagon-3{
     background-image: url(../img/Robert-Kuo.png);
 }
-
 .topic .speaker #arron_faber .hexagon-3 {
     background-image: url(../img/Aaron-Faber.png);
 }
-
 .topic .speaker #ian_huntington .hexagon-3 {
     background-image: url(../img/Ian-Huntington.png);
 }
