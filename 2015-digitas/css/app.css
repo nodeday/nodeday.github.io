@@ -72,10 +72,14 @@ a.same-color:hover{
     transform: rotate(-45deg);
 }
 .navbar-brand {
-    padding: 5px 15px 5px 0;
+    padding: 15px 15px 5px 0;
 }
 .navbar-brand img {
     height: 100%;
+}
+.twitter-icon img{
+    width: 36px;
+    vertical-align: middle;
 }
 .row img {
     max-width: 100%;
