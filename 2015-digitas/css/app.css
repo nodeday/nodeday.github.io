@@ -78,7 +78,7 @@ a.same-color:hover{
     height: 100%;
 }
 .twitter-icon img{
-    width: 36px;
+    width: 25px;
     vertical-align: middle;
 }
 .row img {
@@ -251,7 +251,9 @@ body > section h3 {
     -o-transform: rotate(-60deg);
     transform: rotate(-60deg);
 }
-
+.topic .speaker #andy_royle .hexagon-3{
+    background-image: url(../img/Andy-Royle.png);
+}
 .topic .speaker #ian_crowther .hexagon-3{
     background-image: url(../img/Ian-Crowther.png);
 }
