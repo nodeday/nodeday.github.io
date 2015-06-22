@@ -297,6 +297,13 @@ fieldset[disabled] .btn-register.active {
     -o-transform: rotate(-60deg);
     transform: rotate(-60deg);
 }
+
+.topic .speaker #mathew_clark .hexagon-3{
+    background-image: url(../img/Matthew-Clark.png);
+}
+.topic .speaker #jonathan_ishmael .hexagon-3{
+    background-image: url(../img/Johnathan-Ishmael.png);
+}
 .topic .speaker #andy_royle .hexagon-3{
     background-image: url(../img/Andy-Royle.png);
 }
