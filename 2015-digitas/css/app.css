@@ -149,6 +149,52 @@ body > section h3 {
     white-space:nowrap;
 }
 
+.btn-register { 
+  color: #ffffff; 
+  background-color: #3FA9F5; 
+  border-color: #3FA9F5; 
+} 
+ 
+.btn-register:hover, 
+.btn-register:focus, 
+.btn-register:active, 
+.btn-register.active, 
+.open .dropdown-toggle.btn-register { 
+  color: #ffffff; 
+  background-color: #1899F5; 
+  border-color: #3FA9F5; 
+} 
+ 
+.btn-register:active, 
+.btn-register.active, 
+.open .dropdown-toggle.btn-register { 
+  background-image: none; 
+} 
+ 
+.btn-register.disabled, 
+.btn-register[disabled], 
+fieldset[disabled] .btn-register, 
+.btn-register.disabled:hover, 
+.btn-register[disabled]:hover, 
+fieldset[disabled] .btn-register:hover, 
+.btn-register.disabled:focus, 
+.btn-register[disabled]:focus, 
+fieldset[disabled] .btn-register:focus, 
+.btn-register.disabled:active, 
+.btn-register[disabled]:active, 
+fieldset[disabled] .btn-register:active, 
+.btn-register.disabled.active, 
+.btn-register[disabled].active, 
+fieldset[disabled] .btn-register.active { 
+  background-color: #3FA9F5; 
+  border-color: #3FA9F5; 
+} 
+ 
+.btn-register .badge { 
+  color: #3FA9F5; 
+  background-color: #ffffff; 
+}
+
 #about {
     background: #8BC944;
     color: #fff;
@@ -250,6 +296,13 @@ body > section h3 {
     -ms-transform: rotate(-60deg);
     -o-transform: rotate(-60deg);
     transform: rotate(-60deg);
+}
+
+.topic .speaker #mathew_clark .hexagon-3{
+    background-image: url(../img/Matthew-Clark.png);
+}
+.topic .speaker #jonathan_ishmael .hexagon-3{
+    background-image: url(../img/Johnathan-Ishmael.png);
 }
 .topic .speaker #andy_royle .hexagon-3{
     background-image: url(../img/Andy-Royle.png);
