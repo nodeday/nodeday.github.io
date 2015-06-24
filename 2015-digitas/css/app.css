@@ -298,6 +298,9 @@ fieldset[disabled] .btn-register.active {
     transform: rotate(-60deg);
 }
 
+.topic .speaker #al_graham .hexagon-3{
+    background-image: url(../img/Al-Graham.png);
+}
 .topic .speaker #mathew_clark .hexagon-3{
     background-image: url(../img/Matthew-Clark.png);
 }
