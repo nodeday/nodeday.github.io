@@ -251,8 +251,12 @@ body > section h3 {
     background-image: url(../img/MichaelPaulson.jpeg);
 }
 
-.topic .speaker #ms{
-  background-image: url(../img/MSFT_logo.png);
+.topic .speaker #al_graham .hexagon-3 {
+    background-image: url(../img/Al-Graham.png);
+}
+
+.topic .speaker #emily_rose .hexagon-3 {
+    background-image: url(../img/Emily-Rose.png);
 }
 
 .topic .speaker-info {
