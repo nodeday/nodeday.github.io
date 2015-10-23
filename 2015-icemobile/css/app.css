@@ -247,70 +247,9 @@ body > section h3 {
     -o-transform: rotate(-60deg);
     transform: rotate(-60deg);
 }
-.topic .speaker #richard_rodger .hexagon-3 {
-    background-image: url(../img/Richard-Rodger.png);
+.topic .speaker #michael_paulson .hexagon-3 {
+    background-image: url(../img/MichaelPaulson.jpeg);
 }
-.topic .speaker #scott_rahner .hexagon-3 {
-    background-image: url(../img/Scott-Rahner.png);
-}
-.topic .speaker #john_paul .hexagon-3 {
-    background-image: url(../img/John-Paul.png);
-}
-.topic .speaker #edward_cudahy .hexagon-3 {
-    background-image: url(../img/Ed-Cudahy.png);
-}
-.topic .speaker #matteo .hexagon-3 {
-    background-image: url(../img/Matteo-Collina.png);
-}
-.topic .speaker #isaac .hexagon-3 {
-    background-image: url(../img/Isaac-Schlueter.png);
-}
-.topic .speaker #colin_vernon .hexagon-3 {
-    background-image: url(../img/Colin-Vernon.png);
-}
-.topic .speaker #Danshaw .hexagon-3 {
-    background-image: url(../img/Danshaw.jpeg);
-    background-size: 115%;
-}
-.topic .speaker #SameeraRao .hexagon-3 {
-    background-image: url(../img/SameeraRao.jpeg);
-}
-.topic .speaker #alexb .hexagon-3 {
-    background-image: url(../img/alexbalazs.jpeg);
-}
-.topic .speaker #apurva .hexagon-3 {
-    background-image: url(../img/Apurva.png);
-}
-.topic .speaker #jean_charles .hexagon-3 {
-    background-image: url(../img/Jean-Charles-Sisk.png);
-}
-.topic .speaker #jai .hexagon-3 {
-    background-image: url(../img/Jai.jpeg);
-}
-.topic .speaker #yash .hexagon-3 {
-    background-image: url(../img/yash.jpg);
-}
-.topic .speaker #aliza .hexagon-3 {
-    background-image: url(../img/aliza4.jpeg);
-}
-.topic .speaker #abhishek .hexagon-3 {
-    background-image: url(../img/abhishek.jpeg);
-}
-.topic .speaker #vignesh .hexagon-3 {
-    background-image: url(../img/vignesh.jpeg);
-    background-size: 115%;
-}
-.topic .speaker #emily_rose .hexagon-3 {
-    background-image: url(../img/Emily-Rose.png);
-}
-
-.topic .speaker #cian .hexagon-3 {
-     background-image: url(../img/Cian-O_Maidin.png);
- }
-
-.topic .speaker #wayne_warner .hexagon-3 {
-   background-image: url(../img/Wayne-Warner.png);
- }
 
 .topic .speaker #ms{
   background-image: url(../img/MSFT_logo.png);
