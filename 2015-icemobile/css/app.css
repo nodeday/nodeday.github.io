@@ -19,9 +19,11 @@ a:hover {
     color: #7ac943;
 }
 
-a.same-color:hover{
-    color: #3fa9f5;
+a.same-color,
+a.same-color:hover {
+    color: #fff
 }
+
 .wrapper {
     max-width: 900px;
     margin: 0 auto;
