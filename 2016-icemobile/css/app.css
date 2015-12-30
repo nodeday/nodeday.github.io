@@ -249,6 +249,7 @@ body > section h3 {
     -o-transform: rotate(-60deg);
     transform: rotate(-60deg);
 }
+
 .topic .speaker #michael_paulson .hexagon-3 {
     background-image: url(../img/MichaelPaulson.jpeg);
 }
@@ -257,8 +258,24 @@ body > section h3 {
     background-image: url(../img/Al-Graham.png);
 }
 
+.topic .speaker #richard_rodger .hexagon-3 {
+    background-image: url(../img/Richard-Rodger.jpg);
+}
+
 .topic .speaker #emily_rose .hexagon-3 {
     background-image: url(../img/Emily-Rose.png);
+}
+
+.topic .speaker #matteo_collina .hexagon-3 {
+    background-image: url(../img/Matteo-Collina.jpg);
+}
+
+.topic .speaker #kelsey_breseman .hexagon-3 {
+    background-image: url(../img/Kelsey-Breseman.jpg);
+}
+
+.topic .speaker #peter_elger .hexagon-3 {
+    background-image: url(../img/Peter-Elger.jpg);
 }
 
 .topic .speaker-info {
@@ -326,8 +343,8 @@ body > section h3 {
         font-size: 5rem;
     }
     #hero {
-        background: url(../img/hero_bg.jpg) center center no-repeat;
-        background-size: cover;
+        background: url(../img/hero_bg.png) bottom center no-repeat;
+        background-size: contain;
     }
     #hero .splash {
         max-width: 400px;
