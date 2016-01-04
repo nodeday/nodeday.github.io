@@ -179,7 +179,9 @@ body > section h3 {
 }
 
 #topics {
-    padding-bottom: 0;
+    padding-bottom: 240px;
+    background: url(../img/hero_bg.png) bottom center no-repeat;
+    background-size: contain;
 }
 
 .topic {
@@ -343,8 +345,7 @@ body > section h3 {
         font-size: 5rem;
     }
     #hero {
-        background: url(../img/hero_bg.png) bottom center no-repeat;
-        background-size: contain;
+
     }
     #hero .splash {
         max-width: 400px;
