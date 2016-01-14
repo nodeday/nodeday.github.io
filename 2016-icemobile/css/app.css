@@ -280,6 +280,18 @@ body > section h3 {
     background-image: url(../img/Peter-Elger.jpg);
 }
 
+.topic .speaker #alaina_percival .hexagon-3 {
+    background-image: url(../img/Alaina-Percival.jpg);
+}
+
+.topic .speaker #zach_holman .hexagon-3 {
+    background-image: url(../img/Zach-Holman.png);
+}
+
+.topic .speaker #jean-charles_sisk .hexagon-3 {
+    background-image: url(../img/Jean-Charles-Sisk.png);
+}
+
 .topic .speaker-info {
     margin-top: 42px;
     text-align: left;
