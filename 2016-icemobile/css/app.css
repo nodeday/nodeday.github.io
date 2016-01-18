@@ -220,7 +220,6 @@ body > section h3 {
     -ms-transform: rotate(120deg);
     -o-transform: rotate(120deg);
     transform: rotate(120deg);
-    cursor: pointer;
     padding-bottom: 200%;
     margin: -42% 0;
 }
