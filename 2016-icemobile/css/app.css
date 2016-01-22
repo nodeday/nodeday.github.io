@@ -291,6 +291,22 @@ body > section h3 {
     background-image: url(../img/Jean-Charles-Sisk.png);
 }
 
+.topic .speaker #gabriele_di_stefano .hexagon-3 {
+    background-image: url(../img/Gabriele-di-Stefano.jpg);
+}
+
+.topic .speaker #dean_mcdonnell .hexagon-3 {
+    background-image: url(../img/Dean-McDonnell.jpg);
+}
+
+.topic .speaker #luca_maraschi .hexagon-3 {
+    background-image: url(../img/Luca-Maraschi.jpg);
+}
+
+.topic .speaker #maciej_malecki .hexagon-3 {
+    background-image: url(../img/Maciej-Malecki.jpg);
+}
+
 .topic .speaker-info {
     margin-top: 42px;
     text-align: left;
