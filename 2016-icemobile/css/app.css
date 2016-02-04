@@ -283,6 +283,15 @@ body > section h3 {
     background-image: url(../img/Alaina-Percival.jpg);
 }
 
+.topic .speaker #ahmad_nassri .hexagon-3 {
+    background-image: url(../img/Ahmad-Nassri.jpg);
+}
+
+.topic .speaker #jonathan_carter .hexagon-3 {
+    background-image: url(../img/Jonathan-Carter.jpg);
+}
+
+
 .topic .speaker #ben_fleis .hexagon-3 {
     background-image: url(../img/Ben-Fleis.jpg);
 }
