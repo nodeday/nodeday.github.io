@@ -308,8 +308,16 @@ body > section h3 {
     background-image: url(../img/Dean-McDonnell.jpg);
 }
 
+.topic .speaker #david_mark_clements .hexagon-3 {
+    background-image: url(../img/david_mark_clements.jpg);
+}
+
 .topic .speaker #luca_maraschi .hexagon-3 {
     background-image: url(../img/Luca-Maraschi.jpg);
+}
+
+.topic .speaker #nathan_zadoks .hexagon-3 {
+    background-image: url(../img/Nathan-Zadoks.jpg);
 }
 
 .topic .speaker #maciej_malecki .hexagon-3 {
@@ -451,4 +459,8 @@ body > section h3 {
         margin-top: 0;
         text-align: center;
     }
+}
+
+#24lb_footer {
+  display: none !important;
 }
