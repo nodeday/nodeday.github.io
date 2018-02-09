@@ -171,8 +171,8 @@ body > section h3 {
 }
 
 #feed .twitter-feed iframe {
-    float: none; 
-    width: 100% !important;  
+    float: none;
+    width: 100% !important;
     height: 500px !important;
 }
 
@@ -268,36 +268,36 @@ body > section h3 {
 .topic .speaker #colin_vernon .hexagon-3 {
     background-image: url(../img/Colin-Vernon.png);
 }
-.topic .speaker #lin_clark .hexagon-3 {
-    background-image: url(../img/Lin-Clark.jpg);
+.topic .speaker #Danshaw .hexagon-3 {
+    background-image: url(../img/Danshaw.jpeg);
     background-size: 115%;
 }
-.topic .speaker #travell_perkins .hexagon-3 {
-    background-image: url(../img/Travell-Perkins.png);
+.topic .speaker #SameeraRao .hexagon-3 {
+    background-image: url(../img/SameeraRao.jpeg);
 }
-.topic .speaker #matt_podwysocki .hexagon-3 {
-    background-image: url(../img/Matt-Podwysocki.png);
+.topic .speaker #alexb .hexagon-3 {
+    background-image: url(../img/alexbalazs.jpeg);
 }
-.topic .speaker #mikeal_rogers .hexagon-3 {
-    background-image: url(../img/Mikeal-Rogers.png);
+.topic .speaker #apurva .hexagon-3 {
+    background-image: url(../img/Apurva.png);
 }
 .topic .speaker #jean_charles .hexagon-3 {
     background-image: url(../img/Jean-Charles-Sisk.png);
 }
-.topic .speaker #chris_williams .hexagon-3 {
-    background-image: url(../img/Chris-Williams.png);
+.topic .speaker #jai .hexagon-3 {
+    background-image: url(../img/Jai.jpeg);
 }
-.topic .speaker #robert_schultz .hexagon-3 {
-    background-image: url(../img/Robert-Schultz.png);
+.topic .speaker #yash .hexagon-3 {
+    background-image: url(../img/yash.jpg);
 }
-.topic .speaker #josh_holbrook .hexagon-3 {
-    background-image: url(../img/Josh-Holbrook.png);
+.topic .speaker #aliza .hexagon-3 {
+    background-image: url(../img/aliza4.jpeg);
 }
-.topic .speaker #ryan_juang .hexagon-3 {
-    background-image: url(../img/Ryan-Juang.png);
+.topic .speaker #abhishek .hexagon-3 {
+    background-image: url(../img/abhishek.jpeg);
 }
-.topic .speaker #clifton .hexagon-3 {
-    background-image: url(../img/Clifton.png);
+.topic .speaker #vignesh .hexagon-3 {
+    background-image: url(../img/vignesh.jpeg);
     background-size: 115%;
 }
 .topic .speaker #emily_rose .hexagon-3 {

@@ -19,9 +19,11 @@ a:hover {
     color: #7ac943;
 }
 
-a.same-color:hover{
-    color: #3fa9f5;
+a.same-color,
+a.same-color:hover {
+    color: #fff
 }
+
 .wrapper {
     max-width: 900px;
     margin: 0 auto;
@@ -171,13 +173,15 @@ body > section h3 {
 }
 
 #feed .twitter-feed iframe {
-    float: none; 
-    width: 100% !important;  
+    float: none;
+    width: 100% !important;
     height: 500px !important;
 }
 
 #topics {
-    padding-bottom: 0;
+    padding-bottom: 240px;
+    background: url(../img/hero_bg.png) bottom center no-repeat;
+    background-size: contain;
 }
 
 .topic {
@@ -216,7 +220,6 @@ body > section h3 {
     -ms-transform: rotate(120deg);
     -o-transform: rotate(120deg);
     transform: rotate(120deg);
-    cursor: pointer;
     padding-bottom: 200%;
     margin: -42% 0;
 }
@@ -247,73 +250,78 @@ body > section h3 {
     -o-transform: rotate(-60deg);
     transform: rotate(-60deg);
 }
+
+.topic .speaker #michael_paulson .hexagon-3 {
+    background-image: url(../img/MichaelPaulson.jpeg);
+}
+
+.topic .speaker #al_graham .hexagon-3 {
+    background-image: url(../img/Al-Graham.png);
+}
+
 .topic .speaker #richard_rodger .hexagon-3 {
-    background-image: url(../img/Richard-Rodger.png);
+    background-image: url(../img/Richard-Rodger.jpg);
 }
-.topic .speaker #scott_rahner .hexagon-3 {
-    background-image: url(../img/Scott-Rahner.png);
-}
-.topic .speaker #john_paul .hexagon-3 {
-    background-image: url(../img/John-Paul.png);
-}
-.topic .speaker #edward_cudahy .hexagon-3 {
-    background-image: url(../img/Ed-Cudahy.png);
-}
-.topic .speaker #matteo .hexagon-3 {
-    background-image: url(../img/Matteo-Collina.png);
-}
-.topic .speaker #isaac .hexagon-3 {
-    background-image: url(../img/Isaac-Schlueter.png);
-}
-.topic .speaker #colin_vernon .hexagon-3 {
-    background-image: url(../img/Colin-Vernon.png);
-}
-.topic .speaker #lin_clark .hexagon-3 {
-    background-image: url(../img/Lin-Clark.jpg);
-    background-size: 115%;
-}
-.topic .speaker #travell_perkins .hexagon-3 {
-    background-image: url(../img/Travell-Perkins.png);
-}
-.topic .speaker #matt_podwysocki .hexagon-3 {
-    background-image: url(../img/Matt-Podwysocki.png);
-}
-.topic .speaker #mikeal_rogers .hexagon-3 {
-    background-image: url(../img/Mikeal-Rogers.png);
-}
-.topic .speaker #jean_charles .hexagon-3 {
-    background-image: url(../img/Jean-Charles-Sisk.png);
-}
-.topic .speaker #chris_williams .hexagon-3 {
-    background-image: url(../img/Chris-Williams.png);
-}
-.topic .speaker #robert_schultz .hexagon-3 {
-    background-image: url(../img/Robert-Schultz.png);
-}
-.topic .speaker #josh_holbrook .hexagon-3 {
-    background-image: url(../img/Josh-Holbrook.png);
-}
-.topic .speaker #ryan_juang .hexagon-3 {
-    background-image: url(../img/Ryan-Juang.png);
-}
-.topic .speaker #clifton .hexagon-3 {
-    background-image: url(../img/Clifton.png);
-    background-size: 115%;
-}
+
 .topic .speaker #emily_rose .hexagon-3 {
     background-image: url(../img/Emily-Rose.png);
 }
 
-.topic .speaker #cian .hexagon-3 {
-     background-image: url(../img/Cian-O_Maidin.png);
- }
+.topic .speaker #matteo_collina .hexagon-3 {
+    background-image: url(../img/Matteo-Collina.jpg);
+}
 
-.topic .speaker #wayne_warner .hexagon-3 {
-   background-image: url(../img/Wayne-Warner.png);
- }
+.topic .speaker #kelsey_breseman .hexagon-3 {
+    background-image: url(../img/Kelsey-Breseman.jpg);
+}
 
-.topic .speaker #ms{
-  background-image: url(../img/MSFT_logo.png);
+.topic .speaker #peter_elger .hexagon-3 {
+    background-image: url(../img/Peter-Elger.jpg);
+}
+
+.topic .speaker #alaina_percival .hexagon-3 {
+    background-image: url(../img/Alaina-Percival.jpg);
+}
+
+.topic .speaker #ahmad_nassri .hexagon-3 {
+    background-image: url(../img/Ahmad-Nassri.jpg);
+}
+
+.topic .speaker #jonathan_carter .hexagon-3 {
+    background-image: url(../img/Jonathan-Carter.jpg);
+}
+
+
+.topic .speaker #ben_fleis .hexagon-3 {
+    background-image: url(../img/Ben-Fleis.jpg);
+}
+
+.topic .speaker #jean-charles_sisk .hexagon-3 {
+    background-image: url(../img/Jean-Charles-Sisk.png);
+}
+
+.topic .speaker #gabriele_di_stefano .hexagon-3 {
+    background-image: url(../img/Gabriele-di-Stefano.jpg);
+}
+
+.topic .speaker #dean_mcdonnell .hexagon-3 {
+    background-image: url(../img/Dean-McDonnell.jpg);
+}
+
+.topic .speaker #david_mark_clements .hexagon-3 {
+    background-image: url(../img/david_mark_clements.jpg);
+}
+
+.topic .speaker #luca_maraschi .hexagon-3 {
+    background-image: url(../img/Luca-Maraschi.jpg);
+}
+
+.topic .speaker #nathan_zadoks .hexagon-3 {
+    background-image: url(../img/Nathan-Zadoks.jpg);
+}
+
+.topic .speaker #maciej_malecki .hexagon-3 {
+    background-image: url(../img/Maciej-Malecki.jpg);
 }
 
 .topic .speaker-info {
@@ -381,8 +389,7 @@ body > section h3 {
         font-size: 5rem;
     }
     #hero {
-        background: url(../img/hero_bg.jpg) center center no-repeat;
-        background-size: cover;
+
     }
     #hero .splash {
         max-width: 400px;
@@ -452,4 +459,8 @@ body > section h3 {
         margin-top: 0;
         text-align: center;
     }
+}
+
+#24lb_footer {
+  display: none !important;
 }
