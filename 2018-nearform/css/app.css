@@ -279,6 +279,9 @@ body > section h3 {
 .topic .speaker #edward_cudahy .hexagon-3 {
     background-image: url(../img/Ed-Cudahy.png);
 }
+.topic .speaker #aaron_heckmann .hexagon-3 {
+    background-image: url(../img/aaron_heckmann.png);
+}
 
 .topic .speaker-info {
     margin-top: 42px;
