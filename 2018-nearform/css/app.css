@@ -280,6 +280,11 @@ body > section h3 {
     background-image: url(../img/Ed-Cudahy.png);
 }
 
+
+.topic .speaker #tara_manicsic .hexagon-3 {
+    background-image: url(../img/tara_manicsic.png);
+}
+
 .topic .speaker-info {
     margin-top: 42px;
     text-align: left;
