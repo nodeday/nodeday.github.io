@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/2018-nearform/css/app.css" type="text/css" />
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -19,9 +19,31 @@
       <script src="2015-condenast/js/respond.min.js"></script>
     <![endif]-->
 
+   <script>
+   /*! modernizr 3.6.0 (Custom Build) | MIT *
+ * https://modernizr.com/download/?-setclasses !*/
+!function(n,e,s){function o(n){var e=r.className,s=Modernizr._config.classPrefix||"";if(c&&(e=e.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+s+"no-js(\\s|$)");e=e.replace(o,"$1"+s+"js$2")}Modernizr._config.enableClasses&&(e+=" "+s+n.join(" "+s),c?r.className.baseVal=e:r.className=e)}function a(n,e){return typeof n===e}function i(){var n,e,s,o,i,l,r;for(var c in f)if(f.hasOwnProperty(c)){if(n=[],e=f[c],e.name&&(n.push(e.name.toLowerCase()),e.options&&e.options.aliases&&e.options.aliases.length))for(s=0;s<e.options.aliases.length;s++)n.push(e.options.aliases[s].toLowerCase());for(o=a(e.fn,"function")?e.fn():e.fn,i=0;i<n.length;i++)l=n[i],r=l.split("."),1===r.length?Modernizr[r[0]]=o:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=o),t.push((o?"":"no-")+r.join("-"))}}var t=[],f=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(n,e){var s=this;setTimeout(function(){e(s[n])},0)},addTest:function(n,e,s){f.push({name:n,fn:e,options:s})},addAsyncTest:function(n){f.push({name:null,fn:n})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var r=e.documentElement,c="svg"===r.nodeName.toLowerCase();i(),o(t),delete l.addTest,delete l.addAsyncTest;for(var u=0;u<Modernizr._q.length;u++)Modernizr._q[u]();n.Modernizr=Modernizr}(window,document);
+
+    </script>
+
 </head>
 
 <body data-spy="scroll" data-target=".topMenu" id="home">
+
+    <script>
+      document.body.classList.add('js-loading');
+
+      window.addEventListener("load", showPage);
+      // Fall back to 500ms for slower pages
+      window.setTimeout(function() {
+        showPage();
+      }, 500);
+
+      function showPage() {
+        document.body.classList.remove('js-loading');
+        document.body.classList.add('loaded');
+      }
+    </script>
 
     <header role="navigation" class="navbar navbar-fixed-top">
         <div class="wrapper">
@@ -89,21 +111,21 @@
 
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 about-box">
-                            <div class="content">
+                            <div class="content" data-aos="zoom-in-up" data-aos-delay="600" data-aos-once="true">
                                 <h3>200 C-Level attendees</h3>
                                 <p>200 C-Level attendees will be joined by industry leaders for a day of talks, panels, workshops and round-table discussion.</p>
                             </div>
                         </div>
 
                         <div class="col-xs-12 col-sm-4 about-box">
-                            <div class="content">
+                            <div class="content" data-aos="zoom-in-up" data-aos-delay="800" data-aos-once="true">
                                 <h3>Node.js</h3>
                                 <p>Node.js plays a critial role in digitizing old enterprise businesses, prividing reliable scaling and security, while helping teams explore new technology practices such as IoT and AI.</p>
                             </div>
                         </div>
 
                         <div class="col-xs-12 col-sm-4 about-box">
-                            <div class="content">
+                            <div class="content" data-aos="zoom-in-up" data-aos-delay="1000" data-aos-once="true">
                                 <h3>Learning</h3>
                                 <p>We're creating a space for Creativity, Exploration, Discussion and Learning to help businesses learn and get in touch with the industry leaders on these topics.</p>
                             </div>
@@ -151,7 +173,7 @@
         </div>
 
 
-        <div class="topic topic-break">
+        <div class="topic topic-break"  data-aos="fade-up" data-aos-once="true">
              <div class="wrapper">
 
                 <div class="row">
@@ -168,7 +190,7 @@
             </div>
         </div>
 
-        <div class="topic topic-talk">
+        <div class="topic topic-talk" data-aos="zoom-in-up" data-aos-once="true">
 
             <div class="wrapper">
 
@@ -235,7 +257,7 @@
 
         </div>
 
-        <div class="topic topic-talk">
+        <div class="topic topic-talk" data-aos="zoom-in-up" data-aos-once="true">
 
             <div class="wrapper">
 
@@ -308,7 +330,7 @@ Shawn has a storied history in strategy, product and program development spannin
 
         </div>
 
-              <div class="topic topic-break">
+              <div class="topic topic-break"  data-aos="fade-up" data-aos-once="true">
              <div class="wrapper">
 
                 <div class="row">
@@ -327,7 +349,7 @@ Shawn has a storied history in strategy, product and program development spannin
         </div>
 
 
-        <div class="topic topic-talk">
+        <div class="topic topic-talk" data-aos="zoom-in-up" data-aos-once="true">
 
             <div class="wrapper">
 
@@ -399,7 +421,7 @@ Nithya graduated with an MS in Computer Science from NDSU and an MBA from the Un
 
 
 
-            <div class="topic topic-break">
+            <div class="topic topic-break"  data-aos="fade-up" data-aos-once="true">
                 <div class="wrapper">
                     <div class="row">
                         <div class="col-sm-2 time">12:50</div>
@@ -413,7 +435,7 @@ Nithya graduated with an MS in Computer Science from NDSU and an MBA from the Un
 
 
 
-        <div class="topic topic-talk">
+        <div class="topic topic-talk" data-aos="zoom-in-up" data-aos-once="true">
             <div class="wrapper">
                 <div class="row">
                     <div class="col-sm-2 time">13:45</div>
@@ -555,7 +577,7 @@ integrate.ai</p>
 
 
 
-            <div class="topic topic-talk">
+            <div class="topic topic-talk" data-aos="zoom-in-up" data-aos-once="true">
 
             <div class="wrapper">
 
@@ -618,7 +640,7 @@ integrate.ai</p>
 
         </div>
 
-            <div class="topic topic-break">
+            <div class="topic topic-break"  data-aos="fade-up" data-aos-once="true">
                 <div class="wrapper">
                     <div class="row">
                         <div class="col-sm-2 time">16:05</div>
@@ -631,7 +653,7 @@ integrate.ai</p>
 
 
 
-        <div class="topic topic-talk">
+        <div class="topic topic-talk" data-aos="zoom-in-up" data-aos-once="true">
 
             <div class="wrapper">
 
@@ -716,7 +738,7 @@ premium audiences on every relevant platform.
 
          
 
-        <div class="topic topic-talk">
+        <div class="topic topic-talk" data-aos="zoom-in-up" data-aos-once="true">
 
             <div class="wrapper">
 
@@ -780,7 +802,7 @@ Prior to founding Bench CI, Ahmad lead large development teams across various in
         </div>
 
 
-        <div class="topic topic-break">
+        <div class="topic topic-break"  data-aos="fade-up" data-aos-once="true">
              <div class="wrapper">
 
                 <div class="row">
@@ -904,20 +926,27 @@ Prior to founding Bench CI, Ahmad lead large development teams across various in
 
     <script src="2018-nearform/js/app.js"></script>
     <script>
-    // (function(i, s, o, g, r, a, m) {
-    //     i['GoogleAnalyticsObject'] = r;
-    //     i[r] = i[r] || function() {
-    //         (i[r].q = i[r].q || []).push(arguments)
-    //     }, i[r].l = 1 * new Date();
-    //     a = s.createElement(o),
-    //         m = s.getElementsByTagName(o)[0];
-    //     a.async = 1;
-    //     a.src = g;
-    //     m.parentNode.insertBefore(a, m)
-    // })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    // ga('create', 'UA-46851283-1', 'nodeday.com');
-    // ga('send', 'pageview');
+    ga('create', 'UA-46851283-1', 'nodeday.com');
+    ga('send', 'pageview');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 450,
+        easing: 'ease-out-quad'
+      });
     </script>
 </body>
 
