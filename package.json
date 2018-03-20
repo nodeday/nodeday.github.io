@@ -1,0 +1,30 @@
+{
+  "name": "nodeday.github.io",
+  "version": "1.0.0",
+  "description": "NodeDay =======",
+  "main": "index.js",
+  "scripts": {
+    "build-task:scss-compile": "node-sass-chokidar --source-map true ./2018-nearform/sass/ -o ./2018-nearform/css",
+    "build-task:autoprefixer": "postcss ./2018-nearform/css/*.css --use autoprefixer -d ./2018-nearform/css",
+    "sass:build": "npm-run-all -p build-task:*",
+    "sass:watch": "chokidar './2018-nearform/sass/**/*.scss' -c 'npm run sass:build'",
+    "dev": "npm-run-all -p sass:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodeday/nodeday.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nodeday/nodeday.github.io/issues"
+  },
+  "homepage": "https://github.com/nodeday/nodeday.github.io#readme",
+  "dependencies": {
+    "autoprefixer": "^8.1.0",
+    "chokidar-cli": "^1.2.0",
+    "node-sass-chokidar": "^1.1.2",
+    "npm-run-all": "^4.1.2",
+    "postcss-cli": "^5.0.0"
+  }
+}
