@@ -57,6 +57,10 @@ h3 {
   margin: 32px 0;
 }
 
+p {
+  font-family: Roboto;
+}
+
 strong {
   font-weight: 700;
 }
@@ -108,6 +112,12 @@ strong {
   li {
     display: inline-block;
     margin: 0 15px;
+
+    @media (max-width: 768px) {
+      display: block;
+      margin: 15px;
+    }
+
   }
   .nav a {
     border-bottom: 1px solid transparent;
@@ -119,11 +129,20 @@ strong {
     margin: 32px 0 0;
     transition: all .2s ease-out;
 
+    @media (max-width: 768px) {
+      display: inline-block;
+      margin: 16px 0;
+    }
+
     &:hover {
       background: none;
       border-bottom: 1px solid $blue;
     }
   }
+}
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 100%;
 }
 
 .nav-special {
@@ -138,9 +157,9 @@ strong {
 
 .navbar-toggle {
   margin-right: 0;
-  padding: 9px 0;
+  padding: 26px 0 0;
   .icon-bar {
-    background: #ffffff;
+    background: $blue;
     &:nth-of-type(2) {
       top: 1px;
     }
@@ -184,13 +203,26 @@ body > section {
   }
 }
 
+#hero {
+  background: url(../img/hero_bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
 .hero {
 
   min-height: 535px;
 
+  @media (max-width: 500px) {
+    min-height: 620px;
+  }
+
   &-heading {
     font-weight: 400;
     max-width: 641px;
+
+    @media (max-width: 500px) {
+      font-size: 24px;
+    }
   }
 
   &-divider {
@@ -203,6 +235,11 @@ body > section {
   &-date {
     color: #fff;
     font-family: Roboto;
+    margin: 0 0 10px;
+
+    @media (max-width: 500px) {
+      font-size: 20px;
+    }
   }
 
   &-text {
@@ -210,6 +247,10 @@ body > section {
     font-family: Roboto;
     font-size: 24px;
     line-height: 34px;
+
+    @media (max-width: 500px) {
+      font-size: 20px;
+    }
   }
 }
 
@@ -231,6 +272,13 @@ body > section {
   min-height: 265px;
 
   padding-left: 25px;
+
+  @media (max-width: 768px) {
+    border: none;
+    padding: 15px;
+    min-height: 0;
+    margin-top: 8px;
+  }
 
   &:first-child {
     padding-left: 15px;
@@ -482,6 +530,10 @@ body > section {
   width: 100%;
   text-align: center;
 
+  @media (max-width: 768px) {
+    margin: 20px 0;
+  }
+
   a {
     display: inline-block;
     
@@ -503,6 +555,7 @@ body > section {
   background: #1F2F78;
   color: #fff;
   padding-bottom: 120px;
+
   h2 {
     color: #fff;
     font-size: 32px;
@@ -519,6 +572,10 @@ body > section {
 
 .address-content {
   margin-top: 105px;
+
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
 }
 
 #registration {
@@ -543,8 +600,6 @@ body > section {
     float: right;
   }
   #hero {
-    background: url(../img/hero_bg.jpg) center center no-repeat;
-    background-size: cover;
     .splash {
       max-width: 400px;
     }
