@@ -10,15 +10,40 @@
     <link rel="stylesheet" href="/2018-nearform/css/bootstrap.min.css">
     <link rel="stylesheet" href="/2018-nearform/css/app.css" type="text/css" />
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="2015-condenast/js/html5shiv.min.js"></script>
       <script src="2015-condenast/js/respond.min.js"></script>
     <![endif]-->
 
+   <script>
+   /*! modernizr 3.6.0 (Custom Build) | MIT *
+ * https://modernizr.com/download/?-setclasses !*/
+!function(n,e,s){function o(n){var e=r.className,s=Modernizr._config.classPrefix||"";if(c&&(e=e.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+s+"no-js(\\s|$)");e=e.replace(o,"$1"+s+"js$2")}Modernizr._config.enableClasses&&(e+=" "+s+n.join(" "+s),c?r.className.baseVal=e:r.className=e)}function a(n,e){return typeof n===e}function i(){var n,e,s,o,i,l,r;for(var c in f)if(f.hasOwnProperty(c)){if(n=[],e=f[c],e.name&&(n.push(e.name.toLowerCase()),e.options&&e.options.aliases&&e.options.aliases.length))for(s=0;s<e.options.aliases.length;s++)n.push(e.options.aliases[s].toLowerCase());for(o=a(e.fn,"function")?e.fn():e.fn,i=0;i<n.length;i++)l=n[i],r=l.split("."),1===r.length?Modernizr[r[0]]=o:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=o),t.push((o?"":"no-")+r.join("-"))}}var t=[],f=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(n,e){var s=this;setTimeout(function(){e(s[n])},0)},addTest:function(n,e,s){f.push({name:n,fn:e,options:s})},addAsyncTest:function(n){f.push({name:null,fn:n})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var r=e.documentElement,c="svg"===r.nodeName.toLowerCase();i(),o(t),delete l.addTest,delete l.addAsyncTest;for(var u=0;u<Modernizr._q.length;u++)Modernizr._q[u]();n.Modernizr=Modernizr}(window,document);
+
+    </script>
+
 </head>
 
 <body data-spy="scroll" data-target=".topMenu" id="home">
+
+    <script>
+      document.body.classList.add('js-loading');
+
+      window.addEventListener("load", showPage);
+      // Fall back to 500ms for slower pages
+      window.setTimeout(function() {
+        showPage();
+      }, 500);
+
+      function showPage() {
+        document.body.classList.remove('js-loading');
+        document.body.classList.add('loaded');
+      }
+    </script>
 
     <header role="navigation" class="navbar navbar-fixed-top">
         <div class="wrapper">
@@ -28,8 +53,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
-                    <img src="/2018-nearform/img/logo.svg" alt="nodeday">
+                <a class="navbar-brand" href="/">
+                    <img src="/2018-nearform/img/Logo.jpg" alt="NodeDay">
                 </a>
             </div>
             <div class="navbar-collapse collapse">
@@ -42,14 +67,14 @@
                     </li>
                     <li><a href="#location">Location</a></li>
                     <li><a href="2016-icemobile/index.html">Previous NodeDay</a></li>
-                    <li><a href="https://ti.to/nearform/node-day-toronto/with/bzmrgotiod8" target="_blank">Register</a></li>
+                    <li class="nav-special"><a href="https://ti.to/nearform/node-day-toronto/with/bzmrgotiod8" target="_blank">Register</a></li>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <section id="hero">
+    <section id="hero" class="hero center-vertical">
 
         <div class="wrapper">
 
@@ -57,22 +82,16 @@
 
                 <div class="col-xs-12">
                  
-                    <div class="tagline">NodeDay Toronto is a one-day Node.js conference by enterprise leaders, for enterprise leaders.</br> <a href="https://ti.to/nearform/node-day-toronto/with/bzmrgotiod8" target="_blank"> REGISTER HERE</a></div>
-                 
-                 <div class="date"> NodeDay Toronto: May 2, 2018</div>
+                    <h1 class="hero-heading">NodeDay Toronto is a one-day Node.js conference by enterprise leaders, for enterprise leaders.</h1>
 
-                    <h1 class="splash">
-                        <img src="/2018-nearform/img/hero2015.svg" alt="nodeday">
-                    </h1>
-                  
+                    <hr class="hero-divider">
 
-                 
+                    <h3 class="hero-date"> NodeDay Toronto: May 2, 2018</h3>
 
+                    <p class="hero-text">TELUS Digital Conference Space 25<br>York Street, Toronto, Canada</p>
 
-        
+                    <p><a class="btn btn-primary" href="https://ti.to/nearform/node-day-toronto/with/bzmrgotiod8" target="_blank">Register</a></p>
                     
-                   
-
                 </div>
 
             </div>
@@ -88,22 +107,30 @@
             <div class="row">
 
                 <div class="col-xs-12">
-                <h2>About NodeDay</h2>
+                <h2 class="text-centered">About NodeDay</h2>
 
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 about-box">
+                            <div class="content" data-aos="zoom-in-up" data-aos-delay="600" data-aos-once="true">
+                                <h3>200 C-Level attendees</h3>
+                                <p>200 C-Level attendees will be joined by industry leaders for a day of talks, panels, workshops and round-table discussion.</p>
+                            </div>
+                        </div>
 
-                    
+                        <div class="col-xs-12 col-sm-4 about-box">
+                            <div class="content" data-aos="zoom-in-up" data-aos-delay="800" data-aos-once="true">
+                                <h3>Node.js</h3>
+                                <p>Node.js plays a critial role in digitizing old enterprise businesses, prividing reliable scaling and security, while helping teams explore new technology practices such as IoT and AI.</p>
+                            </div>
+                        </div>
 
-                    <p>
-                      NodeDay Toronto is a one day Node.js conference by enterprise leaders, for  enterprise leaders. 200 c-level attendees will be joined by Industry leaders for a day of talks, panels, workshops and round table discussion. There will be plenty more time for networking during the coffee breaks and lunch. 
-Node.js is the world’s most popular programming language and it’s radically changing how software is built. Node.js plays a critical role in digitizing the old enterprise businesses, providing reliable scaling & security, while helping teams explore new technologies practices such as IoT and AI.
-We’re creating a space for Creativity, Exploration, Discussion and Learning to help businesses learn and get in touch with the industry leaders on these topics.
-
-                      <br>
-                      Come join us at TELUS Digital Conference Space 
-25 York Street, Toronto, Canada
- on May 2, 2018 -
-                      <a class="same-color" href="https://ti.to/nearform/node-day-toronto/with/bzmrgotiod8" target="_blank">register here</a>
-                    </p>
+                        <div class="col-xs-12 col-sm-4 about-box">
+                            <div class="content" data-aos="zoom-in-up" data-aos-delay="1000" data-aos-once="true">
+                                <h3>Learning</h3>
+                                <p>We're creating a space for Creativity, Exploration, Discussion and Learning to help businesses learn and get in touch with the industry leaders on these topics.</p>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -137,14 +164,16 @@ We’re creating a space for Creativity, Exploration, Discussion and Learning to
 
     <section id="topics" aria-labelledby="topicsLabel">
 
-        <div class="wrapper">
+        <div class="topics-header-wrapper">
 
-            <h2 id="topicsLabel">Topics &amp; Agenda</h2>
+            <div class="wrapper">
+                <h2 id="topicsLabel">NodeDay Schedule</h2>
+            </div>
 
         </div>
 
 
- <div class="topic topic-break">
+        <div class="topic topic-break"  data-aos="fade-up" data-aos-once="true">
              <div class="wrapper">
 
                 <div class="row">
@@ -155,22 +184,19 @@ We’re creating a space for Creativity, Exploration, Discussion and Learning to
 
 
                     <div class="col-sm-8">
-
                         <h3 class="title">Doors open and breakfast</h3>
-                        </div>
-                        </div>
-                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="topic topic-talk">
+        <div class="topic topic-talk" data-aos="zoom-in-up" data-aos-once="true">
 
             <div class="wrapper">
 
                 <div class="row">
 
-                    <div class="col-sm-2 time">9:15
-                    <div class="icon core"></div>
-                    </div>
+                    <div class="col-sm-2 time">9:15</div>
                     
 
                     <div class="col-sm-8">
@@ -188,12 +214,11 @@ We’re creating a space for Creativity, Exploration, Discussion and Learning to
                       </p>
 
                       <p class="bio">
-                        <p><b>Dan Shaw,</b> aka “dshaw”, has dedicated his career to growing the Node.js Ecosystem. Dan was instrumental in the formation of the Node.js Foundation where he served on the Board as Director. Dan is known as "The Godfather of Node.js” for his tireless efforts to build community and align the needs of developers and business leaders.</br>
+                        <p><strong>Dan Shaw,</strong> aka “dshaw”, has dedicated his career to growing the Node.js Ecosystem. Dan was instrumental in the formation of the Node.js Foundation where he served on the Board as Director. Dan is known as "The Godfather of Node.js” for his tireless efforts to build community and align the needs of developers and business leaders.</p>
 
-Dan is a keynote speaker and speaks about Leadership, Node.js, JavaScript and Digital Transformation. He is recognizable as the “Voice of Node.js” as long-time host of the NodeUp podcast. Dan has created numerous events like EnterpriseJS, NodeDay, SFNode, SFNodeBots, and Nodebots Day to provide opportunities to share knowledge and learn. </br>
+                        <p>Dan is a keynote speaker and speaks about Leadership, Node.js, JavaScript and Digital Transformation. He is recognizable as the “Voice of Node.js” as long-time host of the NodeUp podcast. Dan has created numerous events like EnterpriseJS, NodeDay, SFNode, SFNodeBots, and Nodebots Day to provide opportunities to share knowledge and learn. </p>
 
-Dan created the first consulting company dedicated to Node.js called The Node Firm and then the first commercial entity to productize Node.js with NodeSource. Today, Dan Shaw works across the industry providing leadership as a Strategic Advisor to companies looking grow their presence and work effectively with Node.js.
-                      </p>
+                        <p>Dan created the first consulting company dedicated to Node.js called The Node Firm and then the first commercial entity to productize Node.js with NodeSource. Today, Dan Shaw works across the industry providing leadership as a Strategic Advisor to companies looking grow their presence and work effectively with Node.js.</p>
 
                     </div>
 
@@ -204,7 +229,11 @@ Dan created the first consulting company dedicated to Node.js called The Node Fi
 
                             <div class="speaker-image col-sm-12 col-xs-6">
 
-                                <div class="hexagon-1" id="dan_shaw"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
+                                <div class="hexagon-1" id="dan_shaw">
+                                    <div class="hexagon-2">
+                                        <div class="hexagon-3"></div>
+                                    </div>
+                                </div>
 
                             </div>
                             
@@ -228,14 +257,13 @@ Dan created the first consulting company dedicated to Node.js called The Node Fi
 
         </div>
 
-        <div class="topic topic-talk">
+        <div class="topic topic-talk" data-aos="zoom-in-up" data-aos-once="true">
 
             <div class="wrapper">
 
                 <div class="row">
 
                     <div class="col-sm-2 time">10:15
-                    <div class="icon core"></div>
                     </div>
                     
 
@@ -254,9 +282,9 @@ Dan created the first consulting company dedicated to Node.js called The Node Fi
                       </p>
 
                       <p class="bio">
-                        <p><b> Shawn</b> serves as Chief Digital Officer at TELUS, driving the digitization strategy for the enterprise across all core lines of business. His team is responsible for delivering a best-in-class experience supporting customers, team members and prospects that accelerates TELUS' competitive advantage, delivers on our customer-first commitment, and our goal of becoming the most recommended company globally. </br>
+                        <p><b> Shawn</b> serves as Chief Digital Officer at TELUS, driving the digitization strategy for the enterprise across all core lines of business. His team is responsible for delivering a best-in-class experience supporting customers, team members and prospects that accelerates TELUS' competitive advantage, delivers on our customer-first commitment, and our goal of becoming the most recommended company globally. </p><p>
 
-As part of TELUS’s digital transformation, Shawn is using lean startup principles, agile techniques and platform thinking to generate ongoing customer feedback to bring an industry-leading customer experience. </br>
+As part of TELUS’s digital transformation, Shawn is using lean startup principles, agile techniques and platform thinking to generate ongoing customer feedback to bring an industry-leading customer experience. </p><p>
 
 
 Shawn has been a leader at TELUS since 2008, joining the Tech Strategy team to spearhead the deployment of TELUS' national HSPA+ network and first iPhone launch. Two years later, he joined the TELUS Customer Solutions team as Director, Strategy and Planning. In this role, Shawn was responsible for the consumer products and services roadmap and the delivery of large complex programs including the launch of LTE, the next generation of TELUS' industry-leading wireless network.</br>
@@ -302,7 +330,7 @@ Shawn has a storied history in strategy, product and program development spannin
 
         </div>
 
-              <div class="topic topic-break">
+              <div class="topic topic-break"  data-aos="fade-up" data-aos-once="true">
              <div class="wrapper">
 
                 <div class="row">
@@ -314,21 +342,20 @@ Shawn has a storied history in strategy, product and program development spannin
 
                     <div class="col-sm-8">
 
-                        <h3 class="title">break</h3>
+                        <h3 class="title">Break</h3>
                         </div>
                         </div>
                         </div>
         </div>
 
 
-        <div class="topic topic-talk">
+        <div class="topic topic-talk" data-aos="zoom-in-up" data-aos-once="true">
 
             <div class="wrapper">
 
                 <div class="row">
 
                     <div class="col-sm-2 time">11:30
-                    <div class="icon core"></div>
                
                     </div>
                     
@@ -349,10 +376,10 @@ Shawn has a storied history in strategy, product and program development spannin
 
                       <p class="bio">
                         <p><b>Nithya A. Ruff </b>is the Senior Director for Comcast’s Open Source Practice.  She is responsible for growing Open Source culture inside of Comcast and engagement with external communities.  Prior to this, she started and grew the Western Digital’s Open Source Strategy Office. She first glimpsed the power of open source while at SGI in the 90s and has been building bridges between hardware developers and the open source community ever since.     She’s also held leadership positions at Wind River (an Intel Company), Synopsys, Avaya, Tripwire and Eastman Kodak.   At Wind River, she led a team of product managers in managing a world class embedded Linux distribution and was a key member of the Yocto Project advocacy team on the board. Nithya is a Director at Large on the Linux Foundation Board and represents community interests on the board.
-                        </br>
+                        </p><p>
  
 Nithya has been a passionate advocate and a speaker for opening doors to new people in Open Source for many years. She has also been a promoter of valuing diverse ways of contributing to open source such as in marketing, legal and community.   You can often find her on social media promoting dialogue on diversity and open source.  She has spoken at multiple conferences such as OSSummit, OSCON, All Things Open, SCALE, Grace Hopper, OpenStack, VMWorld, OS Strategy Summit and Red Hat Summit on the business and community of open source.   In recognition of her work in open source both on the business and community side, she was named to CIO magazine’s most influential women in open source list. She was recently one of 4 people to win the 2017 O’Reilly Open Source Award for exceptional contribution to open source. 
- </br> 
+ </p><p> 
  
 Nithya graduated with an MS in Computer Science from NDSU and an MBA from the University of Rochester, Simon Business School.  She lives in the San Francisco Bay Area and is a proud mother of two daughters. 
 
@@ -394,108 +421,176 @@ Nithya graduated with an MS in Computer Science from NDSU and an MBA from the Un
 
 
 
-              <div class="topic topic-break">
-             <div class="wrapper">
-
-                <div class="row">
-
-                    <div class="col-sm-2 time">
-                    12:50
+            <div class="topic topic-break"  data-aos="fade-up" data-aos-once="true">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-sm-2 time">12:50</div>
+                        <div class="col-sm-8">
+                            <h3 class="title">Lunch</h3>
+                        </div>
                     </div>
+                </div>
+            </div>
 
 
+
+
+        <div class="topic topic-talk" data-aos="zoom-in-up" data-aos-once="true">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-sm-2 time">13:45</div>
                     <div class="col-sm-8">
-
-                        <h3 class="title">lunch break</h3>
+                        <h3 class="title">Panel Discussion</h3>
+                        <h4>Security &amp; Digital</h4>
+                        <p class="abstract"></p>
+                        <p class="link"></p>
+                        <p class="link"></p>
+                        <p class="bio"><b>Tara Z. Manicsic</b> is a lifelong student, teacher, and maker. She has spent her career using JavaScript on both back-end and front-end to create applications. A Developer Advocate for Progress, Google Developer Expert, and international technical speaker, she focuses on conveying the codebase she has learned. In her free time she works in her community to educate and learn from other developers. Tara launched &amp; directs the Cincinnati Chapter of Women Who Code and the Cincinnati branch of NodeSchool. Beyond code, Tara still makes things but with solder, clay, and wool.</p>
+                    </div>
+                    <div class="col-sm-2 col-xs-12">
+                        <div class="speaker row">
+                            <div class="speaker-image col-sm-12 col-xs-6">
+                                <div class="hexagon-1" id="tara_manicsic">
+                                    <div class="hexagon-2">
+                                        <div class="hexagon-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="speaker-info col-sm-12 col-xs-6">
+                            <p class="speaker-name">Tara Z. Manicsic</p>
+                            <p><a class="same-color" href="https://twitter.com/tzmanics?lang=en" target="_blank">@Tzmanics</a></p>
+                            <p class="speaker-occupation">Developer Advocate - Progress<br /></p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-sm-2 time">&nbsp;</div>
+                <div class="col-sm-8">
+                    <br>
+                    <p class="bio"><strong>Jory Burson</strong> is the COO of Bocoup, the open source tech consultancy working on web platform standards and performance. Day-to-day at Bocoup, she guides the company's strategic planning process, medium-term development of new initiatives, and business operations. Jory also founded Bocoup Education, where she enjoys collaborating with people to create unique content and high-quality training resources for the Open Web. She has contributed to open source projects such as jQuery, Grunt and Johnny-Five; and is an active participant in web standards and open source development, serving on boards, committees, and working groups for the JS Foundation, Ecma International, and the W3C.</p>
+                    <p>Jory is most excited about researching and improving the web technology standards process, and about creating positive social changes to improve quality of life for open source developers. In her spare time, she enjoys spending time with her family in Boston and making art. She can be found on GitHub and Twitter at <a href="https://twitter.com/jorydotcom">@jorydotcom</a>.</p>
+                </div>
+                <div class="col-sm-2 col-xs-12">
+                    <div class="speaker row">
+                        <div class="speaker-image col-sm-12 col-xs-6">
+                            <div class="hexagon-1" id="jory_burson">
+                                <div class="hexagon-2">
+                                    <div class="hexagon-3"></div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="speaker-info col-sm-12 col-xs-6">
+                            <p class="speaker-name">Jory Burson</p>
+                            <p><a class="same-color" href="https://twitter.com/jorydotcom?lang=en" target="_blank">@jorydotcom</a></p>
+                            <p class="speaker-occupation">COO<br />Bocoup</p>
                         </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-
-
-
-        <div class="topic topic-talk">
-
-            <div class="wrapper">
-
-                <div class="row">
-
-                    <div class="col-sm-2 time">13:45
-                    <div class="icon core"></div>
-               
-                    </div>
-                    
-
-                    <div class="col-sm-8">
-
-                        <h3 class="title">Panel Discussion</h3>
-                        <h4>Security & Digital</h4>
-
-                      <p class="abstract">
-                      </p>
-
-                      <p class="link">
-                      </p>
-
-                      <p class="link">
-                      </p>
-
-                      <p class="bio">
-                        <p><b>Tara Z. Manicsic</b> is a lifelong student, teacher, and maker. She has spent her career using JavaScript on both back-end and front-end to create applications. A Developer Advocate for Progress, Google Developer Expert, and international technical speaker, she focuses on conveying the codebase she has learned. In her free time she works in her community to educate and learn from other developers. Tara launched & directs the Cincinnati Chapter of Women Who Code and the Cincinnati branch of NodeSchool. Beyond code, Tara still makes things but with solder, clay, and wool.
-
-                      </p>
-
-                    </div>
-
-                    <div class="col-sm-2 col-xs-12">
-
-                        <div class="speaker row">
-                        
-
-
-                            <div class="speaker-image col-sm-12 col-xs-6">
-
-                                <div class="hexagon-1" id="tara_manicsic"><div class="hexagon-2"><div class="hexagon-3"></div></div></div>
-
-                            </div>
-                           
-
-                            <div class="speaker-info col-sm-12 col-xs-6">
-
-                                <p class="speaker-name">Tara Z. Manicsic</p>
-                                 <p><a class="same-color" href="https://twitter.com/tzmanics?lang=en" target="_blank">@Tzmanics</a></p>
-
-                                <p class="speaker-occupation">Developer Advocate - Progress<br /></p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-sm-2 time">&nbsp;</div>
+                <div class="col-sm-8">
+                    <br>
+                    <p class="bio"><strong>Kyle Hodgson</strong> is a Principal Architect at ThoughtWorks, where he advises clients from C-level to developer on technology strategy and best practice. With ThoughtWorks he's led successful re-platform and digital transformation efforts for Fortune 50 enterprises in the retail and telco industry. Formerly a serial CTO, he has architected, designed and built several distributed systems and digital products. Kyle is passionate about several topics in software development, including the .NET open source web service framework Service Stack. He co-authored the ServiceStack Cookbook in 2015.</p>
                 </div>
-
+                <div class="col-sm-2 col-xs-12">
+                    <div class="speaker row">
+                        <div class="speaker-image col-sm-12 col-xs-6">
+                            <div class="hexagon-1" id="kyle_hodgson">
+                                <div class="hexagon-2">
+                                    <div class="hexagon-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-info col-sm-12 col-xs-6">
+                            <p class="speaker-name">Kyle Hodgson</p>
+                            <p><a class="same-color" href="https://twitter.com/kylehodgson?lang=en" target="_blank">@kylehodgson</a></p>
+                            <p class="speaker-occupation">Principal Architect<br>
+ThoughtWorks</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-sm-2 time">&nbsp;</div>
+                <div class="col-sm-8">
+                    <br>
+                    <p class="bio"><strong>Joel Chen</strong> is Principal Architect leading the Customer Engineering App Platform at WalmartLabs.  He’s been developing software for 20 years with experience in low level embedded systems to large scale Enterprise systems.  He has been focusing primarily on NodeJS since 2013.  After successfully lead the migration of PayPal checkout to NodeJS and AngularJS, he joined WalmartLabs and lead the migration of the Web platform to NodeJS and ReactJS.</p>
+                </div>
+                <div class="col-sm-2 col-xs-12">
+                    <div class="speaker row">
+                        <div class="speaker-image col-sm-12 col-xs-6">
+                            <div class="hexagon-1" id="joel_chen">
+                                <div class="hexagon-2">
+                                    <div class="hexagon-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-info col-sm-12 col-xs-6">
+                            <p class="speaker-name">Joel Chen</p>
+                            <p><a class="same-color" href="https://www.linkedin.com/in/joelchen/" target="_blank">LinkedIn</a></p>
+                            <p class="speaker-occupation">Principal Architect<br>
+WalmartLabs</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-sm-2 time">&nbsp;</div>
+                <div class="col-sm-8">
+                    <br>
+                    <p class="bio"><strong>Kathryn Hume</strong> is Vice President Product &amp; Strategy for <a href="https://www.integrate.ai">integrate.ai</a>, a SaaS startup applying AI to drive growth and customer satisfaction for large enterprises, and a Venture Partner at ffVC, a seed- and early-stage technology venture capital firm, where she advises early-stage artificial intelligence companies and sources deal flow. As the former Director of Sales and Marketing at Fast Forward Labs (Cloudera), Kathryn helped Fortune 500 companies accelerate their machine learning and data science capabilities. Prior to that, she was a Principal Consultant in Intapp's Risk Practice, focused on data privacy, security, and compliance. A widely respected speaker and writer on AI, Kathryn excels at communicating how AI and machine learning technologies work in plain language. She has given lectures and taught courses on the intersections of technology, ethics, law, and society at Harvard Business School, Stanford, the MIT Media Lab, and the University of Calgary Faculty of Law. She speaks seven languages, and holds a PhD in comparative literature from Stanford University and a BA in mathematics from the University of Chicago.</p>
+                </div>
+                <div class="col-sm-2 col-xs-12">
+                    <div class="speaker row">
+                        <div class="speaker-image col-sm-12 col-xs-6">
+                            <div class="hexagon-1" id="kathryn_hume">
+                                <div class="hexagon-2">
+                                    <div class="hexagon-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-info col-sm-12 col-xs-6">
+                            <p class="speaker-name">Kathryn Hume</p>
+                            <p><a class="same-color" href="https://twitter.com/HumeKathryn?lang=en" target="_blank">@HumeKathryn</a></p>
+                            <p class="speaker-occupation">VP Product &amp; Strategy<br>
+integrate.ai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
 
-            <div class="topic topic-talk">
+            <div class="topic topic-talk" data-aos="zoom-in-up" data-aos-once="true">
 
             <div class="wrapper">
 
                 <div class="row">
 
-                    <div class="col-sm-2 time">2:45
-                    <div class="icon core"></div>
+                    <div class="col-sm-2 time">14:45
                
                     </div>
                     
 
                     <div class="col-sm-8">
 
-                        <h3 class="title">Scale & People</h3>
+                        <h3 class="title">Scale &amp; People</h3>
                         <h4> Beyond the Code</h4>
 
                       <p class="abstract">Every day, PayPal processes billions of dollars in payments worldwide. Join me on a tour of PayPal's NodeJS ecosystem to find out what makes it all tick and where we are headed next.
@@ -508,8 +603,7 @@ Nithya graduated with an MS in Computer Science from NDSU and an MBA from the Un
                       <p class="link">
                       </p>
 
-                      <p class="bio">
-                        <p><b>Aaron Heckmann</b> leads NodeJS engineering at PayPal, one of the earliest and largest enterprise NodeJS deployments on Earth. Prior to joining PayPal, he oversaw web development at Pebble where his team received the 2015 MongoDB Innovation Award for creating it's smartwatch notification service using NodeJS, MongoDB and AWS. He was a long time maintainer of Mongoose, the popular open source NodeJS MongoDB driver for which he co-received the MongoDB Community Award in 2011. And in 2010, Aaron sold his startup, Clickdummy, which was built using NodeJS v0.2.
+                      <p class="bio"><b>Aaron Heckmann</b> leads NodeJS engineering at PayPal, one of the earliest and largest enterprise NodeJS deployments on Earth. Prior to joining PayPal, he oversaw web development at Pebble where his team received the 2015 MongoDB Innovation Award for creating it's smartwatch notification service using NodeJS, MongoDB and AWS. He was a long time maintainer of Mongoose, the popular open source NodeJS MongoDB driver for which he co-received the MongoDB Community Award in 2011. And in 2010, Aaron sold his startup, Clickdummy, which was built using NodeJS v0.2.
                       </p>
 
                     </div>
@@ -544,37 +638,28 @@ Nithya graduated with an MS in Computer Science from NDSU and an MBA from the Un
 
             </div>
 
-
-
- <div class="topic topic-break">
-             <div class="wrapper">
-
-                <div class="row">
-
-                    <div class="col-sm-2 time">
-                   4:05
-                    </div>
-
-
-                    <div class="col-sm-8">
-
-                        <h3 class="title">break</h3>
-                        </div>
-                        </div>
-                        </div>
         </div>
 
+            <div class="topic topic-break"  data-aos="fade-up" data-aos-once="true">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-sm-2 time">16:05</div>
+                        <div class="col-sm-8">
+                            <h3 class="title">Break</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
-         <div class="topic topic-talk">
+        <div class="topic topic-talk" data-aos="zoom-in-up" data-aos-once="true">
 
             <div class="wrapper">
 
                 <div class="row">
 
-                    <div class="col-sm-2 time">4:30
-                    <div class="icon core"></div>
+                    <div class="col-sm-2 time">16:30
                
                     </div>
                     
@@ -582,7 +667,7 @@ Nithya graduated with an MS in Computer Science from NDSU and an MBA from the Un
                     <div class="col-sm-8">
 
                         <h3 class="title">Future Thinking</h3>
-                        <h4>Machine Learning & AI</h4>
+                        <h4>Machine Learning &amp; AI</h4>
 
                       <p class="abstract"> <b></b> 
                       </p>
@@ -653,14 +738,13 @@ premium audiences on every relevant platform.
 
          
 
-        <div class="topic topic-talk">
+        <div class="topic topic-talk" data-aos="zoom-in-up" data-aos-once="true">
 
             <div class="wrapper">
 
                 <div class="row">
 
-                    <div class="col-sm-2 time">5:50
-                    <div class="icon core"></div>
+                    <div class="col-sm-2 time">17:50
                
                     </div>
                   
@@ -718,19 +802,19 @@ Prior to founding Bench CI, Ahmad lead large development teams across various in
         </div>
 
 
-        <div class="topic topic-break">
+        <div class="topic topic-break"  data-aos="fade-up" data-aos-once="true">
              <div class="wrapper">
 
                 <div class="row">
 
                     <div class="col-sm-2 time">
-                    6:00
+                    18:00
                     </div>
 
 
                     <div class="col-sm-8">
 
-                        <h3 class="title">Networking and Drinks</h3>
+                        <h3 class="title">Networking &amp; Drinks</h3>
                         </div>
                         </div>
                         </div>
@@ -762,6 +846,40 @@ Prior to founding Bench CI, Ahmad lead large development teams across various in
 
     </section>
 
+    <div class="topics-header-wrapper">
+
+        <div class="wrapper">
+            <h2 id="topicsLabel">NodeDay Partners</h2>
+        </div>
+
+    </div>
+
+    <div class="wrapper">
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <div class="partner-logo">
+                    <a href="https://telus.com"><img class="image-centered" src="./2018-nearform/img/telus.png" alt="Telus"></a>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <div class="partner-logo">
+                    <a href="https://nearform.com"><img class="image-centered" src="./2018-nearform/img/nearForm.png" alt="nearForm"></a>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <div class="partner-logo">
+                    <a href="http://microsoft.com"><img class="image-centered" src="./2018-nearform/img/microsoft.png" alt="Microsoft"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
     <section id="location" aria-labelledby="locationLabel">
 
         <div class="wrapper">
@@ -778,21 +896,22 @@ Prior to founding Bench CI, Ahmad lead large development teams across various in
                 </div>
 
                 <div id="theAddress" class="col-md-6">
+                    
+                    <div class="address-content">
 
+                        <p>TELUS Digital Conference Space 
+                            <br/>25 York Street
+                            <br/>Toronto
+                            <br/>Canada
+                        </p>
 
-                    <p>
-                        <b>TELUS Digital Conference Space 
- 
-</b>
-                        <br/>25 York Street
-                        <br/>Toronto
-                        <br/>Canada
-                       
-                    </p>
+                        <hr>
 
-                    <p>
-                        <a href="https://goo.gl/maps/MPRoPduCCrq">Map Link</a>
-                    </p>
+                        <p>
+                            <a href="https://goo.gl/maps/MPRoPduCCrq">Show on Google Maps</a>
+                        </p>
+
+                    </div>
 
                 </div>
 
@@ -821,6 +940,13 @@ Prior to founding Bench CI, Ahmad lead large development teams across various in
 
     ga('create', 'UA-46851283-1', 'nodeday.com');
     ga('send', 'pageview');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 450,
+        easing: 'ease-out-quad'
+      });
     </script>
 </body>
 
