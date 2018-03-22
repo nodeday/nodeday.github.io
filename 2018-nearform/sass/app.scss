@@ -102,6 +102,10 @@ strong {
   text-align: center;
 }
 
+.text-large {
+  font-size: 18px;
+}
+
 
 .wrapper {
   margin: 0 auto;
@@ -532,7 +536,7 @@ body > section {
   align-items: center;
   display: flex;
   height: 150px;
-  margin: 80px 0;
+  margin: 80px 0 40px;
   width: 100%;
   text-align: center;
 
