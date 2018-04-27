@@ -46,26 +46,97 @@
    <script>
    /*! modernizr 3.6.0 (Custom Build) | MIT *
  * https://modernizr.com/download/?-setclasses !*/
-!function(n,e,s){function o(n){var e=r.className,s=Modernizr._config.classPrefix||"";if(c&&(e=e.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+s+"no-js(\\s|$)");e=e.replace(o,"$1"+s+"js$2")}Modernizr._config.enableClasses&&(e+=" "+s+n.join(" "+s),c?r.className.baseVal=e:r.className=e)}function a(n,e){return typeof n===e}function i(){var n,e,s,o,i,l,r;for(var c in f)if(f.hasOwnProperty(c)){if(n=[],e=f[c],e.name&&(n.push(e.name.toLowerCase()),e.options&&e.options.aliases&&e.options.aliases.length))for(s=0;s<e.options.aliases.length;s++)n.push(e.options.aliases[s].toLowerCase());for(o=a(e.fn,"function")?e.fn():e.fn,i=0;i<n.length;i++)l=n[i],r=l.split("."),1===r.length?Modernizr[r[0]]=o:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=o),t.push((o?"":"no-")+r.join("-"))}}var t=[],f=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(n,e){var s=this;setTimeout(function(){e(s[n])},0)},addTest:function(n,e,s){f.push({name:n,fn:e,options:s})},addAsyncTest:function(n){f.push({name:null,fn:n})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var r=e.documentElement,c="svg"===r.nodeName.toLowerCase();i(),o(t),delete l.addTest,delete l.addAsyncTest;for(var u=0;u<Modernizr._q.length;u++)Modernizr._q[u]();n.Modernizr=Modernizr}(window,document);
-    </script>
+!(function(n, e, s) {
+  function o(n) {
+    var e = r.className,
+      s = Modernizr._config.classPrefix || "";
+    if ((c && (e = e.baseVal), Modernizr._config.enableJSClass)) {
+      var o = new RegExp("(^|\\s)" + s + "no-js(\\s|$)");
+      e = e.replace(o, "$1" + s + "js$2");
+    }
+    Modernizr._config.enableClasses &&
+      ((e += " " + s + n.join(" " + s)),
+      c ? (r.className.baseVal = e) : (r.className = e));
+  }
+  function a(n, e) {
+    return typeof n === e;
+  }
+  function i() {
+    var n, e, s, o, i, l, r;
+    for (var c in f)
+      if (f.hasOwnProperty(c)) {
+        if (
+          ((n = []),
+          (e = f[c]),
+          e.name &&
+            (n.push(e.name.toLowerCase()),
+            e.options && e.options.aliases && e.options.aliases.length))
+        )
+          for (s = 0; s < e.options.aliases.length; s++)
+            n.push(e.options.aliases[s].toLowerCase());
+        for (o = a(e.fn, "function") ? e.fn() : e.fn, i = 0; i < n.length; i++)
+          (l = n[i]),
+            (r = l.split(".")),
+            1 === r.length
+              ? (Modernizr[r[0]] = o)
+              : (!Modernizr[r[0]] ||
+                  Modernizr[r[0]] instanceof Boolean ||
+                  (Modernizr[r[0]] = new Boolean(Modernizr[r[0]])),
+                (Modernizr[r[0]][r[1]] = o)),
+            t.push((o ? "" : "no-") + r.join("-"));
+      }
+  }
+  var t = [],
+    f = [],
+    l = {
+      _version: "3.6.0",
+      _config: {
+        classPrefix: "",
+        enableClasses: !0,
+        enableJSClass: !0,
+        usePrefixes: !0
+      },
+      _q: [],
+      on: function(n, e) {
+        var s = this;
+        setTimeout(function() {
+          e(s[n]);
+        }, 0);
+      },
+      addTest: function(n, e, s) {
+        f.push({ name: n, fn: e, options: s });
+      },
+      addAsyncTest: function(n) {
+        f.push({ name: null, fn: n });
+      }
+    },
+    Modernizr = function() {};
+  (Modernizr.prototype = l), (Modernizr = new Modernizr());
+  var r = e.documentElement,
+    c = "svg" === r.nodeName.toLowerCase();
+  i(), o(t), delete l.addTest, delete l.addAsyncTest;
+  for (var u = 0; u < Modernizr._q.length; u++) Modernizr._q[u]();
+  n.Modernizr = Modernizr;
+})(window, document);
+</script>
 </head>
 
 <body data-spy="scroll" data-target=".topMenu" id="home">
 
     <script>
-      document.body.classList.add('js-loading');
+    document.body.classList.add("js-loading");
 
-      window.addEventListener("load", showPage);
-      // Fall back to 500ms for slower pages
-      window.setTimeout(function() {
-        showPage();
-      }, 500);
+window.addEventListener("load", showPage);
+// Fall back to 500ms for slower pages
+window.setTimeout(function() {
+  showPage();
+}, 500);
 
-      function showPage() {
-        document.body.classList.remove('js-loading');
-        document.body.classList.add('loaded');
-      }
-    </script>
+function showPage() {
+  document.body.classList.remove("js-loading");
+  document.body.classList.add("loaded");
+}
+</script>
 
     <header class="navbar navbar-fixed-top" role="navigation">
         <div class="wrapper">
@@ -554,21 +625,21 @@
                     </div>
                     <div class="col-sm-8">
                         <br>
-                        <p class="bio"><strong>Kathryn Hume</strong> is Vice President Product &amp; Strategy for <a href="https://www.integrate.ai">integrate.ai</a>, a SaaS startup applying AI to drive growth and customer satisfaction for large enterprises, and a Venture Partner at ffVC, a seed- and early-stage technology venture capital firm, where she advises early-stage artificial intelligence companies and sources deal flow. As the former Director of Sales and Marketing at Fast Forward Labs (Cloudera), Kathryn helped Fortune 500 companies accelerate their machine learning and data science capabilities. Prior to that, she was a Principal Consultant in Intapp's Risk Practice, focused on data privacy, security, and compliance. A widely respected speaker and writer on AI, Kathryn excels at communicating how AI and machine learning technologies work in plain language. She has given lectures and taught courses on the intersections of technology, ethics, law, and society at Harvard Business School, Stanford, the MIT Media Lab, and the University of Calgary Faculty of Law. She speaks seven languages, and holds a PhD in comparative literature from Stanford University and a BA in mathematics from the University of Chicago.</p>
+                        <p class="bio"><strong>Briana Brownell</strong> is founder and CEO of Pure Strategy Inc., a technology company whose platform gives enterprises insight from data using AI so they can act faster on customer experience trends and emerging issues. She founded Pure Strategy in 2016 after ten years as a data scientist in the marketing research and finance industries and is a frequent keynote speaker on both technical and business topics including AI, data science, and machine learning. She has lead advanced analytical data projects with top tier companies in pharmaceuticals, telecommunications, banking, insurance, utilities, and retail, among many others.</p>
                     </div>
                     <div class="col-sm-2 col-xs-12">
                         <div class="speaker row">
                             <div class="speaker-image col-sm-12 col-xs-6">
-                                <div class="hexagon-1" id="kathryn_hume">
+                                <div class="hexagon-1" id="briana_brownell">
                                     <div class="hexagon-2">
                                         <div class="hexagon-3"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="speaker-info col-sm-12 col-xs-6">
-                                <p class="speaker-name">Kathryn Hume</p>
-                                <p><a class="same-color" href="https://twitter.com/HumeKathryn?lang=en" target="_blank">@HumeKathryn</a></p>
-                                <p class="speaker-occupation">VP Product &amp; Strategy<br>
+                                <p class="speaker-name">Briana Brownell</p>
+                                <p><a class="same-color" href="https://www.linkedin.com/in/briana-brownell-08067921/" target="_blank">LinkedIn</a></p>
+                                <p class="speaker-occupation">CEO Pure Strategy Inc<br>
                                 integrate.ai</p>
                             </div>
                         </div>
@@ -833,27 +904,29 @@
     <script src="2018-nearform/js/app.js"></script>
     <script>
     (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  i["GoogleAnalyticsObject"] = r;
+  (i[r] =
+    i[r] ||
+    function() {
+      (i[r].q = i[r].q || []).push(arguments);
+    }),
+    (i[r].l = 1 * new Date());
+  (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m);
+})(window, document, "script", "//www.google-analytics.com/analytics.js", "ga");
 
-    ga('create', 'UA-46851283-1', 'nodeday.com');
-    ga('send', 'pageview');
-    </script>
+ga("create", "UA-46851283-1", "nodeday.com");
+ga("send", "pageview");
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
     <script>
-      AOS.init({
-        duration: 450,
-        easing: 'ease-out-quad'
-      });
-    </script>
+    AOS.init({
+  duration: 450,
+  easing: "ease-out-quad"
+});
+</script>
 </body>
 
 </html>
